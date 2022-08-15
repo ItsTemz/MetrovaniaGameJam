@@ -6,45 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e4d974-7c75-4336-9e84-fb6e0231798c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/4/KH/0WP48DFDV4622YKLXJ6N7Y.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Intermediate/Config/CoalescedSourceConfigs/Input.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/DE/SWSI13675DVYIZ0N4NF7Y3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MetroidvaniaJam17ModuleRules.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MetroidvaniaJam17ModuleRules.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MetroidvaniaJam17ModuleRules.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MetroidvaniaJam17ModuleRules.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MetroidvaniaJam17ModuleRulesManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MetroidvaniaJam17ModuleRulesManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/MetroidvaniaJam17Editor/Development/DependencyCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/MetroidvaniaJam17Editor/Development/DependencyCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/MetroidvaniaJam17Editor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/MetroidvaniaJam17Editor/Development/Makefile.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/MetroidvaniaJam17Editor/Development/MetroidvaniaJam17Editor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/MetroidvaniaJam17Editor/Development/MetroidvaniaJam17Editor.uhtmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.cpp.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.cpp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.gen.cpp.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.gen.cpp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/CharacterBase.gen.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/MetroidvaniaJam17.init.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/MetroidvaniaJam17.init.gen.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.dll.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.dll.response.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.lib" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.lib.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.lib.response.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.suppressed.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.suppressed.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.suppressed.lib" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Development/MetroidvaniaJam17/UnrealEditor-MetroidvaniaJam17.suppressed.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/CharacterBase.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/CharacterBase.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/CharacterBase.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/CharacterBase.generated.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/MetroidvaniaJam17.init.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/MetroidvaniaJam17.init.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/MetroidvaniaJam17/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Win64/Development/Editor/MetroidvaniaJam17.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Win64/Development/Editor/MetroidvaniaJam17.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditorTools/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditorTools/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Build-General.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Build-General.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/MetroidvaniaJam17.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/MetroidvaniaJam17.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Character/CharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Character/CharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +166,7 @@
       <workItem from="1660571817246" duration="1198000" />
       <workItem from="1660573084123" duration="12000" />
       <workItem from="1660573321664" duration="6108000" />
-      <workItem from="1660593268966" duration="3677000" />
+      <workItem from="1660593268966" duration="4485000" />
     </task>
     <servers />
   </component>
