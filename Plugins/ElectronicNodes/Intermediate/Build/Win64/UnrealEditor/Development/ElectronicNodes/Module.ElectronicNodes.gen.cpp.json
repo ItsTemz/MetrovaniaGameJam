@@ -1,18 +1,18 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\development\\electronicnodes\\module.electronicnodes.gen.cpp",
+        "Source": "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\development\\electronicnodes\\module.electronicnodes.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "i:\\unreal projects\\github\\projcultivators\\intermediate\\build\\win64\\projcultivatorseditor\\development\\unrealed\\sharedpch.unrealed.shadowerrors.h.pch",
+        "PCH": "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\intermediate\\build\\win64\\metroidvaniajam17editor\\development\\unrealed\\sharedpch.unrealed.shadowerrors.h.pch",
         "Includes": [
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\development\\electronicnodes\\definitions.electronicnodes.h",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\electronicnodes.init.gen.cpp",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\electronicnodessettings.gen.cpp",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\source\\electronicnodes\\public\\electronicnodessettings.h",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\electronicnodessettings.generated.h",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\enupdateconfig.gen.cpp",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\source\\electronicnodes\\private\\popup\\enupdateconfig.h",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\enupdateconfig.generated.h"
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\development\\electronicnodes\\definitions.electronicnodes.h",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\electronicnodes.init.gen.cpp",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\electronicnodessettings.gen.cpp",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\source\\electronicnodes\\public\\electronicnodessettings.h",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\electronicnodessettings.generated.h",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\enupdateconfig.gen.cpp",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\source\\electronicnodes\\private\\popup\\enupdateconfig.h",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\enupdateconfig.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

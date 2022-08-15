@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_AnimNode_LandingPose_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_LandingPose_h_19_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_LandingPose_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAnimNode_LandingPose_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FAnimNode_AdditiveBlendSpace Super;
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FAnimNode_LandingPose>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_LandingPose_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_LandingPose_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

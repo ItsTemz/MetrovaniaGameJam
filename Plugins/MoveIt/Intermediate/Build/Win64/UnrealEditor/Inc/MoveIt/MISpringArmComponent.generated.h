@@ -13,8 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_MISpringArmComponent_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_SPARSE_DATA
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_SPARSE_DATA
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execZoomOut); \
 	DECLARE_FUNCTION(execZoomIn); \
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execOnCharacterJumped);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execZoomOut); \
 	DECLARE_FUNCTION(execZoomIn); \
@@ -30,7 +30,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execOnCharacterJumped);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMISpringArmComponent(); \
 	friend struct Z_Construct_UClass_UMISpringArmComponent_Statics; \
@@ -39,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UMISpringArmComponent)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS \
 private: \
 	static void StaticRegisterNativesUMISpringArmComponent(); \
 	friend struct Z_Construct_UClass_UMISpringArmComponent_Statics; \
@@ -48,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(UMISpringArmComponent)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_STANDARD_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMISpringArmComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMISpringArmComponent) \
@@ -61,7 +61,7 @@ private: \
 public:
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_ENHANCED_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UMISpringArmComponent(UMISpringArmComponent&&); \
@@ -72,25 +72,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UMISpringArmComponent)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_51_PROLOG
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_GENERATED_BODY_LEGACY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_51_PROLOG
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_STANDARD_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_ENHANCED_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_INCLASS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h_54_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -98,7 +98,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UClass* StaticClass<class UMISpringArmComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MISpringArmComponent_h
 
 
 #define FOREACH_ENUM_EMIMOVEMENTORBITTYPE(op) \

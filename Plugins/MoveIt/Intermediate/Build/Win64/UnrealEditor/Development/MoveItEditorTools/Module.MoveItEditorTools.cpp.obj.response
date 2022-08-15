@@ -1,6 +1,6 @@
-"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Module.MoveItEditorTools.cpp"
+"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Module.MoveItEditorTools.cpp"
 /I .
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Source\MoveItEditorTools\Private"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveItEditorTools\Private"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -256,11 +256,11 @@
 /I Editor\Blutility\Classes
 /I Editor\Blutility\Public
 /I Editor\MainFrame\Public
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Inc\MoveItEditorTools"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Source"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Source\MoveItEditorTools\Public"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Inc\MoveIt"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Source\MoveIt\Public"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Inc\MoveItEditorTools"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveItEditorTools\Public"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Inc\MoveIt"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public"
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -281,12 +281,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"I:\Unreal Projects\GitHub\ProjCultivators\Intermediate\Build\Win64\ProjCultivatorsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/FI"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Definitions.MoveItEditorTools.h"
-/Yu"I:\Unreal Projects\GitHub\ProjCultivators\Intermediate\Build\Win64\ProjCultivatorsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Fp"I:\Unreal Projects\GitHub\ProjCultivators\Intermediate\Build\Win64\ProjCultivatorsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
-/Fo"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Module.MoveItEditorTools.cpp.obj"
-/sourceDependencies "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Module.MoveItEditorTools.cpp.json"
+/FI"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/FI"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Definitions.MoveItEditorTools.h"
+/Yu"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/Fp"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
+/Fo"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Module.MoveItEditorTools.cpp.obj"
+/sourceDependencies "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditorTools\Module.MoveItEditorTools.cpp.json"
 /Zc:inline
 /nologo
 /Oi

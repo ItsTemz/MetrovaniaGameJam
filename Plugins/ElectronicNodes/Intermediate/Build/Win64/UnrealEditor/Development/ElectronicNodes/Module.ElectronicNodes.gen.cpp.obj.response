@@ -1,7 +1,7 @@
-"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Module.ElectronicNodes.gen.cpp"
+"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Module.ElectronicNodes.gen.cpp"
 /I .
 /I Editor\AnimationBlueprintEditor\Private
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Source\ElectronicNodes\Private"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Source\ElectronicNodes\Private"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -285,9 +285,9 @@
 /I Editor\BehaviorTreeEditor\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\WebBrowser
 /I Runtime\WebBrowser\Public
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Inc\ElectronicNodes"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Source"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Source\ElectronicNodes\Public"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Inc\ElectronicNodes"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Source"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Source\ElectronicNodes\Public"
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -308,12 +308,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"I:\Unreal Projects\GitHub\ProjCultivators\Intermediate\Build\Win64\ProjCultivatorsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/FI"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Definitions.ElectronicNodes.h"
-/Yu"I:\Unreal Projects\GitHub\ProjCultivators\Intermediate\Build\Win64\ProjCultivatorsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Fp"I:\Unreal Projects\GitHub\ProjCultivators\Intermediate\Build\Win64\ProjCultivatorsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
-/Fo"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Module.ElectronicNodes.gen.cpp.obj"
-/sourceDependencies "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Module.ElectronicNodes.gen.cpp.json"
+/FI"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/FI"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Definitions.ElectronicNodes.h"
+/Yu"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/Fp"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
+/Fo"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Module.ElectronicNodes.gen.cpp.obj"
+/sourceDependencies "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Module.ElectronicNodes.gen.cpp.json"
 /Zc:inline
 /nologo
 /Oi

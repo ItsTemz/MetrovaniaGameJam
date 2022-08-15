@@ -4426,19 +4426,19 @@ void EmptyLinkFunctionForGeneratedCodeMICharacter() {}
 		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in AMICharacter"));
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMICharacter);
-	struct Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics
+	struct Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::EnumInfo[] = {
 		{ EMIMovementState_StaticEnum, TEXT("EMIMovementState"), &Z_Registration_Info_UEnum_EMIMovementState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2714741395U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AMICharacter, AMICharacter::StaticClass, TEXT("AMICharacter"), &Z_Registration_Info_UClass_AMICharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMICharacter), 2840511878U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_3053060850(TEXT("/Script/MoveIt"),
-		Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_3053060850(TEXT("/Script/MoveIt"),
+		Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

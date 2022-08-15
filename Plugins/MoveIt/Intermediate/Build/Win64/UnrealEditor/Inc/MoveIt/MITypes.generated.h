@@ -13,28 +13,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_MITypes_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_39_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_39_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOrientToFloorSettings_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FOrientToFloorSettings>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_79_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_79_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMIWeapon_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIWeapon>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_267_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_267_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPhysicsBlend_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FPhysicsBlend>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_362_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h_362_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMIShotImpact_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct();
 
@@ -42,7 +42,7 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FPhysicsBlend>();
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIShotImpact>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MITypes_h
 
 
 #define FOREACH_ENUM_EMISTRAFEORIENTATION(op) \

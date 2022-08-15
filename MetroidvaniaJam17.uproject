@@ -7,7 +7,10 @@
 		{
 			"Name": "MetroidvaniaJam17",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"MoveIt"
+			]
 		}
 	],
 	"Plugins": [
@@ -17,6 +20,20 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "ElectronicNodes",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/5cb2a394d0c04e73891762be4cbd7216"
+		},
+		{
+			"Name": "MoveIt",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/1b8d6e55c50b4b189f283cbbe3d266d9"
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
 		}
 	]
 }

@@ -14,7 +14,7 @@ class UPhysicalMaterial;
 #endif
 #define MOVEIT_MIAnimInstance_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_16_DELEGATE \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_16_DELEGATE \
 struct _Script_MoveIt_eventMIOnSurfaceImpact_Parms \
 { \
 	FName BoneName; \
@@ -35,15 +35,15 @@ static inline void FMIOnSurfaceImpact_DelegateWrapper(const FMulticastScriptDele
 }
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_54_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_54_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMISurfaceImpact_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct();
 
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMISurfaceImpact>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_SPARSE_DATA
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_SPARSE_DATA
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS \
 	virtual bool ShouldDelayDirectionSwitch_Implementation() const; \
 	virtual bool IsTurnInPlaceEnabled_Implementation(float& ResetRate) const; \
 	virtual bool IsSprinting_Implementation() const; \
@@ -58,7 +58,7 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMISurfaceImpact>();
 	DECLARE_FUNCTION(execComputeSurfaceImpacts);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool ShouldDelayDirectionSwitch_Implementation() const; \
 	virtual bool IsTurnInPlaceEnabled_Implementation(float& ResetRate) const; \
 	virtual bool IsSprinting_Implementation() const; \
@@ -73,7 +73,7 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMISurfaceImpact>();
 	DECLARE_FUNCTION(execComputeSurfaceImpacts);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_EVENT_PARMS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_EVENT_PARMS \
 	struct MIAnimInstance_eventIsSprinting_Parms \
 	{ \
 		bool ReturnValue; \
@@ -107,8 +107,8 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMISurfaceImpact>();
 	};
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_CALLBACK_WRAPPERS
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_CALLBACK_WRAPPERS
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMIAnimInstance(); \
 	friend struct Z_Construct_UClass_UMIAnimInstance_Statics; \
@@ -117,7 +117,7 @@ public: \
 	DECLARE_SERIALIZER(UMIAnimInstance)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS \
 private: \
 	static void StaticRegisterNativesUMIAnimInstance(); \
 	friend struct Z_Construct_UClass_UMIAnimInstance_Statics; \
@@ -126,7 +126,7 @@ public: \
 	DECLARE_SERIALIZER(UMIAnimInstance)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_STANDARD_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMIAnimInstance(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMIAnimInstance) \
@@ -139,7 +139,7 @@ private: \
 public:
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_ENHANCED_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UMIAnimInstance(UMIAnimInstance&&); \
@@ -150,30 +150,30 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UMIAnimInstance)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_181_PROLOG \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_EVENT_PARMS
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_181_PROLOG \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_EVENT_PARMS
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_GENERATED_BODY_LEGACY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_CALLBACK_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_STANDARD_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_CALLBACK_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_CALLBACK_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_ENHANCED_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_CALLBACK_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_INCLASS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h_184_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -181,7 +181,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UClass* StaticClass<class UMIAnimInstance>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstance_h
 
 
 #define FOREACH_ENUM_EMISTRAFEDIRECTIONBASIS(op) \

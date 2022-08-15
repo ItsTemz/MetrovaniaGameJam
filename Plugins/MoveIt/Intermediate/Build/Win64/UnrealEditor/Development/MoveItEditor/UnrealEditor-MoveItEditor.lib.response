@@ -6,8 +6,8 @@
 /NAME:"UnrealEditor-MoveItEditor.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"I:\Unreal Projects\GitHub\ProjCultivators\Intermediate\Build\Win64\ProjCultivatorsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
-"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\Module.MoveItEditor.cpp.obj"
-"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\Module.MoveItEditor.gen.cpp.obj"
-"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\Default.rc2.res"
-/OUT:"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\UnrealEditor-MoveItEditor.lib"
+"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\Module.MoveItEditor.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\Module.MoveItEditor.gen.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\Default.rc2.res"
+/OUT:"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveItEditor\UnrealEditor-MoveItEditor.lib"

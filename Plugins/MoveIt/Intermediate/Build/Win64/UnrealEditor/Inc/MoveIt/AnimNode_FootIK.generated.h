@@ -13,21 +13,21 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_AnimNode_FootIK_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h_11_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h_11_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMIFootIK_State_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct();
 
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIFootIK_State>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h_75_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h_75_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMIFootIK_Foot_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct();
 
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIFootIK_Foot>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h_233_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h_233_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAnimNode_FootIK_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FAnimNode_SkeletalControlBase Super;
@@ -36,7 +36,7 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIFootIK_Foot>();
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FAnimNode_FootIK>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_FootIK_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

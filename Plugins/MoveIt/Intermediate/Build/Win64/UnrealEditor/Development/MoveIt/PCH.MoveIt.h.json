@@ -1,11 +1,11 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "i:\\unreal projects\\github\\projcultivators\\plugins\\moveit\\intermediate\\build\\win64\\unrealeditor\\development\\moveit\\pch.moveit.cpp",
+        "Source": "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\moveit\\intermediate\\build\\win64\\unrealeditor\\development\\moveit\\pch.moveit.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\moveit\\intermediate\\build\\win64\\unrealeditor\\development\\moveit\\pch.moveit.h",
-            "i:\\unreal projects\\github\\projcultivators\\plugins\\moveit\\source\\moveit\\public\\mi_pch.h",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\moveit\\intermediate\\build\\win64\\unrealeditor\\development\\moveit\\pch.moveit.h",
+            "i:\\unreal projects\\metroidvaniajam17\\metrovaniagamejam\\plugins\\moveit\\source\\moveit\\public\\mi_pch.h",
             "i:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\engine.h",
             "i:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "i:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\core\\public\\coretypes.h",

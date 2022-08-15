@@ -17,7 +17,7 @@ class UCurveFloat;
 #endif
 #define MOVEIT_MIViewComponent_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_18_DELEGATE \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_18_DELEGATE \
 struct _Script_MoveIt_eventMIOnCameraChanged_Parms \
 { \
 	UCameraComponent* NewCamera; \
@@ -30,7 +30,7 @@ static inline void FMIOnCameraChanged_DelegateWrapper(const FMulticastScriptDele
 }
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_24_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMICharacterState_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct(); \
 	typedef FAlphaBlend Super;
@@ -38,7 +38,7 @@ static inline void FMIOnCameraChanged_DelegateWrapper(const FMulticastScriptDele
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMICharacterState>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_46_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_46_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMICameraViewBlend_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct(); \
 	typedef FAlphaBlend Super;
@@ -46,8 +46,8 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMICharacterState>();
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMICameraViewBlend>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_SPARSE_DATA
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_SPARSE_DATA
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS \
 	virtual TArray<UCameraComponent*> GetCharacterStateCameras_Implementation() const; \
 	virtual bool IsCharacterStateActive_Implementation(uint8 State) const; \
  \
@@ -60,7 +60,7 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMICameraViewBlend>();
 	DECLARE_FUNCTION(execOnCharacterStateChanged);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual TArray<UCameraComponent*> GetCharacterStateCameras_Implementation() const; \
 	virtual bool IsCharacterStateActive_Implementation(uint8 State) const; \
  \
@@ -73,7 +73,7 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMICameraViewBlend>();
 	DECLARE_FUNCTION(execOnCharacterStateChanged);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_EVENT_PARMS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_EVENT_PARMS \
 	struct MIViewComponent_eventGetCharacterStateCameras_Parms \
 	{ \
 		TArray<UCameraComponent*> ReturnValue; \
@@ -91,8 +91,8 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMICameraViewBlend>();
 	};
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_CALLBACK_WRAPPERS
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_CALLBACK_WRAPPERS
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMIViewComponent(); \
 	friend struct Z_Construct_UClass_UMIViewComponent_Statics; \
@@ -101,7 +101,7 @@ public: \
 	DECLARE_SERIALIZER(UMIViewComponent)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS \
 private: \
 	static void StaticRegisterNativesUMIViewComponent(); \
 	friend struct Z_Construct_UClass_UMIViewComponent_Statics; \
@@ -110,7 +110,7 @@ public: \
 	DECLARE_SERIALIZER(UMIViewComponent)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_STANDARD_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMIViewComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMIViewComponent) \
@@ -123,7 +123,7 @@ private: \
 public:
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_ENHANCED_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UMIViewComponent(UMIViewComponent&&); \
@@ -134,30 +134,30 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UMIViewComponent)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_84_PROLOG \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_EVENT_PARMS
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_84_PROLOG \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_EVENT_PARMS
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_GENERATED_BODY_LEGACY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_CALLBACK_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_STANDARD_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_CALLBACK_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_CALLBACK_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_ENHANCED_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_CALLBACK_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_INCLASS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h_87_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -165,7 +165,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UClass* StaticClass<class UMIViewComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIViewComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

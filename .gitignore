@@ -1,9 +1,12 @@
-Binaries
+
 DerivedDataCache
-Intermediate
+
 Saved
+Binaries
+Intermediate
 /Plugins/Developer
 /Build
+Plugins/MoveIt/Intermediate
 .vscode
 .vs
 *.VC.db

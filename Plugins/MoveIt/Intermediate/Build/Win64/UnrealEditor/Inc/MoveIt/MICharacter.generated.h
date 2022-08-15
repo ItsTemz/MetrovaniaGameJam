@@ -28,7 +28,7 @@ class USoundBase;
 #endif
 #define MOVEIT_MICharacter_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_34_DELEGATE \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_34_DELEGATE \
 struct _Script_MoveIt_eventMIHitWallDelegate_Parms \
 { \
 	FVector ImpactVelocity; \
@@ -43,7 +43,7 @@ static inline void FMIHitWallDelegate_DelegateWrapper(const FMulticastScriptDele
 }
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_35_DELEGATE \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_35_DELEGATE \
 struct _Script_MoveIt_eventMIScuffWallDelegate_Parms \
 { \
 	FVector ImpactVelocity; \
@@ -58,7 +58,7 @@ static inline void FMIScuffWallDelegate_DelegateWrapper(const FMulticastScriptDe
 }
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_36_DELEGATE \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_36_DELEGATE \
 struct _Script_MoveIt_eventMIHitCharacterDelegate_Parms \
 { \
 	AMICharacter* OtherCharacter; \
@@ -75,8 +75,8 @@ static inline void FMIHitCharacterDelegate_DelegateWrapper(const FMulticastScrip
 }
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_SPARSE_DATA
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_SPARSE_DATA
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS \
 	virtual bool CanHitCharacter_Implementation(); \
 	virtual bool CanScuffWall_Implementation() const; \
 	virtual bool CanHitWall_Implementation() const; \
@@ -149,7 +149,7 @@ static inline void FMIHitCharacterDelegate_DelegateWrapper(const FMulticastScrip
 	DECLARE_FUNCTION(execOnRep_InitialOffset);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool CanPlayHitByCharacterVoice_Implementation() const; \
 	virtual FOrientToFloorSettings GetOrientToFloorSettings_Implementation() const; \
 	virtual bool ShouldOrientToFloor_Implementation() const; \
@@ -219,7 +219,7 @@ static inline void FMIHitCharacterDelegate_DelegateWrapper(const FMulticastScrip
 	DECLARE_FUNCTION(execOnRep_InitialOffset);
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_EVENT_PARMS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_EVENT_PARMS \
 	struct MICharacter_eventCanContinueFloorSlide_Parms \
 	{ \
 		bool ReturnValue; \
@@ -513,8 +513,8 @@ static inline void FMIHitCharacterDelegate_DelegateWrapper(const FMulticastScrip
 	};
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_CALLBACK_WRAPPERS
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS_NO_PURE_DECLS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_CALLBACK_WRAPPERS
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMICharacter(); \
 	friend struct Z_Construct_UClass_AMICharacter_Statics; \
@@ -536,7 +536,7 @@ public: \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS \
 private: \
 	static void StaticRegisterNativesAMICharacter(); \
 	friend struct Z_Construct_UClass_AMICharacter_Statics; \
@@ -558,7 +558,7 @@ public: \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_STANDARD_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMICharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMICharacter) \
@@ -571,7 +571,7 @@ private: \
 public:
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_ENHANCED_CONSTRUCTORS \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMICharacter(AMICharacter&&); \
@@ -582,30 +582,30 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMICharacter)
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_38_PROLOG \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_EVENT_PARMS
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_38_PROLOG \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_EVENT_PARMS
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_GENERATED_BODY_LEGACY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_CALLBACK_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_STANDARD_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_CALLBACK_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_SPARSE_DATA \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_CALLBACK_WRAPPERS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS_NO_PURE_DECLS \
-	FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_ENHANCED_CONSTRUCTORS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_SPARSE_DATA \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_CALLBACK_WRAPPERS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_INCLASS_NO_PURE_DECLS \
+	FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h_41_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -613,7 +613,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UClass* StaticClass<class AMICharacter>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MICharacter_h
 
 
 #define FOREACH_ENUM_EMIMOVEMENTSTATE(op) \

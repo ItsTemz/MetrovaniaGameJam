@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_MIAnimInstanceProxy_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstanceProxy_h_16_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstanceProxy_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMIAnimInstanceProxy_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct(); \
 	typedef FAnimInstanceProxy Super;
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIAnimInstanceProxy>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstanceProxy_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_MIAnimInstanceProxy_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,6 +1,6 @@
-"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.cpp"
+"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.cpp"
 /I .
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Source\MoveIt\Private"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Private"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -284,9 +284,9 @@
 /I ..\Plugins\FX\Niagara\Source\NiagaraShader\Public
 /I ..\Plugins\FX\Niagara\Source\NiagaraVertexFactories\Public
 /I Developer\DesktopPlatform\Public
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Inc\MoveIt"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Source"
-/I "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Source\MoveIt\Public"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Inc\MoveIt"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source"
+/I "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public"
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -307,11 +307,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\PCH.MoveIt.h"
-/Yu"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\PCH.MoveIt.h"
-/Fp"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\PCH.MoveIt.h.pch"
-/Fo"I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.cpp.obj"
-/sourceDependencies "I:\Unreal Projects\GitHub\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.cpp.json"
+/FI"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\PCH.MoveIt.h"
+/Yu"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\PCH.MoveIt.h"
+/Fp"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\PCH.MoveIt.h.pch"
+/Fo"I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.cpp.obj"
+/sourceDependencies "I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.cpp.json"
 /Zc:inline
 /nologo
 /Oi

@@ -13,14 +13,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_AnimNode_Gait_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_Gait_h_14_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_Gait_h_14_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMIGait_Foot_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct();
 
 
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIGait_Foot>();
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_Gait_h_86_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_Gait_h_86_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAnimNode_Gait_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FAnimNode_LocalSkeletalControlBase Super;
@@ -29,7 +29,7 @@ template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMIGait_Foot>();
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FAnimNode_Gait>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_Gait_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_Gait_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

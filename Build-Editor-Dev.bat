@@ -1,0 +1,1 @@
+./Source/Build-General.bat PROJECT:MetroidvaniaJam17 PROJ_ADDON:Editor MODE:Development

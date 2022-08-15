@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_AnimNodes_Shared_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNodes_Shared_h_24_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNodes_Shared_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMICopyIKBones_Bone_Statics; \
 	MOVEIT_API static class UScriptStruct* StaticStruct();
 
@@ -21,7 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FMICopyIKBones_Bone>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNodes_Shared_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNodes_Shared_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

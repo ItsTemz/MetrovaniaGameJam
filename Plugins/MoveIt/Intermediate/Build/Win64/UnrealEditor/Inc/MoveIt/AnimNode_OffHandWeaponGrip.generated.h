@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MOVEIT_AnimNode_OffHandWeaponGrip_generated_h
 
-#define FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_OffHandWeaponGrip_h_16_GENERATED_BODY \
+#define FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_OffHandWeaponGrip_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAnimNode_OffHandWeaponGrip_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FAnimNode_SkeletalControlBase Super;
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> MOVEIT_API UScriptStruct* StaticStruct<struct FAnimNode_OffHandWeaponGrip>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ProjCultivators_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_OffHandWeaponGrip_h
+#define CURRENT_FILE_ID FID_MetrovaniaGameJam_Plugins_MoveIt_Source_MoveIt_Public_AnimNodes_AnimNode_OffHandWeaponGrip_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
