@@ -1,0 +1,53 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MoveItEditor.cpp.obj": [
+			"AnimGraphNode_AdditiveBlendSpace.cpp.obj",
+			"AnimGraphNode_AimOffsetCompensation.cpp.obj",
+			"AnimGraphNode_AirLean.cpp.obj",
+			"AnimGraphNode_AngularLean.cpp.obj",
+			"AnimGraphNode_CopyIKBones.cpp.obj",
+			"AnimGraphNode_Duck.cpp.obj",
+			"AnimGraphNode_FootIK.cpp.obj",
+			"AnimGraphNode_Gait.cpp.obj",
+			"AnimGraphNode_JumpFootIK.cpp.obj",
+			"AnimGraphNode_JumpingCompression.cpp.obj",
+			"AnimGraphNode_LandFootIK.cpp.obj",
+			"AnimGraphNode_LandingCompression.cpp.obj",
+			"AnimGraphNode_LandingPose.cpp.obj",
+			"AnimGraphNode_LocalSkeletalControlBase.cpp.obj",
+			"AnimGraphNode_LookTarget.cpp.obj",
+			"AnimGraphNode_MotionWeight.cpp.obj",
+			"AnimGraphNode_OffHandWeaponGrip.cpp.obj",
+			"AnimGraphNode_SpringBase.cpp.obj",
+			"AnimGraphNode_Strafe.cpp.obj",
+			"AnimGraphNode_TranslatePoleVectors.cpp.obj",
+			"AnimGraphNode_TraversalSpring.cpp.obj",
+			"MoveItEditor.cpp.obj"
+		],
+		"Module.MoveItEditor.gen.cpp.obj": [
+			"AnimGraphNode_AdditiveBlendSpace.gen.cpp.obj",
+			"AnimGraphNode_AimOffsetCompensation.gen.cpp.obj",
+			"AnimGraphNode_AirLean.gen.cpp.obj",
+			"AnimGraphNode_AngularLean.gen.cpp.obj",
+			"AnimGraphNode_CopyIKBones.gen.cpp.obj",
+			"AnimGraphNode_Duck.gen.cpp.obj",
+			"AnimGraphNode_FootIK.gen.cpp.obj",
+			"AnimGraphNode_Gait.gen.cpp.obj",
+			"AnimGraphNode_JumpFootIK.gen.cpp.obj",
+			"AnimGraphNode_JumpingCompression.gen.cpp.obj",
+			"AnimGraphNode_LandFootIK.gen.cpp.obj",
+			"AnimGraphNode_LandingCompression.gen.cpp.obj",
+			"AnimGraphNode_LandingPose.gen.cpp.obj",
+			"AnimGraphNode_LocalSkeletalControlBase.gen.cpp.obj",
+			"AnimGraphNode_LookTarget.gen.cpp.obj",
+			"AnimGraphNode_MotionWeight.gen.cpp.obj",
+			"AnimGraphNode_OffHandWeaponGrip.gen.cpp.obj",
+			"AnimGraphNode_SpringBase.gen.cpp.obj",
+			"AnimGraphNode_Strafe.gen.cpp.obj",
+			"AnimGraphNode_TranslatePoleVectors.gen.cpp.obj",
+			"AnimGraphNode_TraversalSpring.gen.cpp.obj",
+			"MoveItEditor.init.gen.cpp.obj"
+		]
+	}
+}

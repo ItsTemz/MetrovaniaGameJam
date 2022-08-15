@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MoveIt.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\PCH.MoveIt.h.obj"
+"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.cpp.obj"
+"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.gen.1_of_4.cpp.obj"
+"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.gen.2_of_4.cpp.obj"
+"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.gen.3_of_4.cpp.obj"
+"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Module.MoveIt.gen.4_of_4.cpp.obj"
+"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\Default.rc2.res"
+/OUT:"I:\Unreal Projects\ProjCultivators\Plugins\MoveIt\Intermediate\Build\Win64\UnrealEditor\Development\MoveIt\UnrealEditor-MoveIt.lib"

@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MoveItEditorTools.cpp.obj": [
+			"MIAnimInstanceCustomization.cpp.obj",
+			"MIAnimRetargetSorter.cpp.obj",
+			"MIBoneTools.cpp.obj",
+			"MICharacterCustomization.cpp.obj",
+			"MITurnInPlaceTools.cpp.obj",
+			"MoveItEditorTools.cpp.obj"
+		],
+		"Module.MoveItEditorTools.gen.cpp.obj": [
+			"MIAnimRetargetSorter.gen.cpp.obj",
+			"MIBoneTools.gen.cpp.obj",
+			"MITurnInPlaceTools.gen.cpp.obj",
+			"MoveItEditorTools.init.gen.cpp.obj"
+		]
+	}
+}
