@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\Source\\MetroidvaniaJam17\\MetroidvaniaJam17.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\Source\\MetroidvaniaJam17.Target.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\Source\\MetroidvaniaJam17Editor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}

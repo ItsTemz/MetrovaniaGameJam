@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MetroidvaniaJam17.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\MetroidvaniaJam17Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\MetroidvaniaJam17.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\MetroidvaniaJam17Character.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\MetroidvaniaJam17GameMode.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\MetroidvaniaJam17.init.gen.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\MetroidvaniaJam17Character.gen.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\MetroidvaniaJam17GameMode.gen.cpp.obj"
+"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\Default.rc2.res"
+/OUT:"I:\Unreal Projects\MetroidvaniaJam17\Intermediate\Build\Win64\UnrealEditor\Development\MetroidvaniaJam17\UnrealEditor-MetroidvaniaJam17.lib"
