@@ -1,33 +1,19 @@
-# Prerequisites
-*.d
-Plugins/Developer
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+Binaries
+DerivedDataCache
+Intermediate
+Saved
+/Plugins/Developer
+/Build
+.vscode
+.vs
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+gen_temp.engine_emp
+ProjCult.sublime-project
+ProjCult.sublime-workspace
