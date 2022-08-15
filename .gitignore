@@ -1,6 +1,6 @@
 # Prerequisites
 *.d
-/Plugins/Developers
+Plugins/Developer
 
 # Compiled Object files
 *.slo
