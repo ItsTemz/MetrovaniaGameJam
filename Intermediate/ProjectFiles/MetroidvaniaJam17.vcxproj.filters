@@ -11,6 +11,8 @@
     <None Include="..\..\Source\MetroidvaniaJam17Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -29,6 +31,678 @@
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ElectronicNodes">
+      <UniqueIdentifier>{3E76CDD4-DA7C-3828-B0C3-C8977B2F8F52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ElectronicNodes\Source">
+      <UniqueIdentifier>{57F6932C-30BA-30A3-B999-46E0EF56D027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ElectronicNodes\Source\ElectronicNodes">
+      <UniqueIdentifier>{936E617C-2D43-3124-9A3F-83A32C3E749D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\ElectronicNodes.Build.cs">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes</Filter>
+    </None>
+    <Filter Include="Plugins\ElectronicNodes\Source\ElectronicNodes\Private">
+      <UniqueIdentifier>{5951B60C-06C0-3679-B711-9FDF2DBD2938}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\ElectronicNodes.cpp">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\ENCommands.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\ENConnectionDrawingPolicy.cpp">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\ENConnectionDrawingPolicy.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\ENPathDrawer.cpp">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\ENPathDrawer.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Lib">
+      <UniqueIdentifier>{0794070F-BE44-3903-BE26-B8620E17C9AF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Lib\HotPatch.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Lib</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Patch">
+      <UniqueIdentifier>{D6F76C8A-22D1-37CA-B4D0-55B73862AF07}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Patch\NodeFactoryPatch.cpp">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Patch</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Patch\NodeFactoryPatch.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Patch</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Policies">
+      <UniqueIdentifier>{71F8DE07-9129-3FF8-8563-814AD1FDE275}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Policies\ENAnimGraphConnectionDrawingPolicy.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Policies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Policies\ENBehaviorTreeConnectionDrawingPolicy.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Policies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Policies\ENControlRigConnectionDrawingPolicy.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Policies</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Popup">
+      <UniqueIdentifier>{00D2030D-EFE7-341D-ADB2-6B5A668675F4}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Popup\ENUpdateConfig.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Popup</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Popup\ENUpdatePopup.cpp">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Popup</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Popup\ENUpdatePopup.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Private\Popup</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\ElectronicNodes\Source\ElectronicNodes\Public">
+      <UniqueIdentifier>{42FF8EA0-5D16-335E-89D1-6F7C251779CE}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Public\ElectronicNodes.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ElectronicNodes\Source\ElectronicNodes\Public\ElectronicNodesSettings.h">
+      <Filter>Plugins\ElectronicNodes\Source\ElectronicNodes\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\ElectronicNodes\ElectronicNodes.uplugin">
+      <Filter>Plugins\ElectronicNodes</Filter>
+    </None>
+    <Filter Include="Plugins\ElectronicNodes\Config">
+      <UniqueIdentifier>{B565FF41-FC22-387C-8BC3-9D2F5ACBC89D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\ElectronicNodes\Config\FilterPlugin.ini">
+      <Filter>Plugins\ElectronicNodes\Config</Filter>
+    </None>
+    <Filter Include="Plugins\ElectronicNodes\Resources">
+      <UniqueIdentifier>{B2CF25B2-D84E-30D1-8966-78C23F47A422}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\ElectronicNodes\Resources\Icon128.png">
+      <Filter>Plugins\ElectronicNodes\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\MoveIt">
+      <UniqueIdentifier>{12EC20D9-88A0-304C-AFB0-84C27E7D3269}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MoveIt\MoveIt.uplugin">
+      <Filter>Plugins\MoveIt</Filter>
+    </None>
+    <Filter Include="Plugins\MoveIt\Resources">
+      <UniqueIdentifier>{600219B3-EA02-339F-82C7-AF0127F1CCF2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MoveIt\Resources\Icon128.png">
+      <Filter>Plugins\MoveIt\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\UEGitPlugin-ue5">
+      <UniqueIdentifier>{CA95BC6B-AF0C-3B5C-8864-BDD36F918853}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\UEGitPlugin-ue5\GitSourceControl.uplugin">
+      <Filter>Plugins\UEGitPlugin-ue5</Filter>
+    </None>
+    <Filter Include="Plugins\UEGitPlugin-ue5\Resources">
+      <UniqueIdentifier>{06C591B9-D36E-379D-9CD8-CA3E08F4F84B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\UEGitPlugin-ue5\Resources\Icon128.png">
+      <Filter>Plugins\UEGitPlugin-ue5\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\MoveIt\Source">
+      <UniqueIdentifier>{CC703003-1733-3E48-A0A0-F55A466449D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt">
+      <UniqueIdentifier>{8BA87BD0-2AD0-3137-8C21-123F2E070EE4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MoveIt\Source\MoveIt\MoveIt.Build.cs">
+      <Filter>Plugins\MoveIt\Source\MoveIt</Filter>
+    </None>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Private">
+      <UniqueIdentifier>{90C09B80-066D-33BB-8051-7959D22B564A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MIAnimInstance.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MIAnimInstanceProxy.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MIAnimNotify_Footstep.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MICharacter.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MICharacterMovementComponent.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MIPhysicalMaterial.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MIPlayerCameraManager.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MIPlayerController.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MISkeletalMeshComponent.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MISpringArmComponent.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MITypes.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MIViewComponent.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MI_PCH.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\MoveIt.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Private\AnimNodes">
+      <UniqueIdentifier>{D01DF013-4BDF-382C-BB21-0E54E6D216B4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNodes_Shared.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_AdditiveAngularBase.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_AdditiveBlendSpace.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_AimOffsetCompensation.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_AirLean.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_AngularBase.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_AngularLean.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_CopyIKBones.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_Duck.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_FootIK.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_Gait.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_JumpFootIK.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_JumpingCompression.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_LandFootIK.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_LandingCompression.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_LandingPose.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_LocalSkeletalControlBase.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_LookTarget.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_MotionWeight.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_OffHandWeaponGrip.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_SpringBase.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_Strafe.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_TranslatePoleVectors.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\AnimNode_TraversalSpring.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\UnrealBase">
+      <UniqueIdentifier>{76DC3943-7B77-3BC5-8744-FF76FE6D288A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\UnrealBase\AnimNode_MIBlendSpacePlayer.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\AnimNodes\UnrealBase</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Private\Templates">
+      <UniqueIdentifier>{C24F00C7-010D-3A71-A1BE-37B22B1B90D8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveIt\Private\Templates\MICharacter_TwinStick.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Private\Templates</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Public">
+      <UniqueIdentifier>{687C3B24-7932-3250-8C0F-A308A57AAFA2}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MIAnimInstance.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MIAnimInstanceProxy.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MIAnimNotify_Footstep.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MICharacter.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MICharacterMovementComponent.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MIPhysicalMaterial.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MIPlayerCameraManager.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MIPlayerController.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MISkeletalMeshComponent.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MISpringArmComponent.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MITypes.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MIViewComponent.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MI_PCH.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\MoveIt.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Public\AnimNodes">
+      <UniqueIdentifier>{2C8A5EDA-74F8-38E0-8C48-7B02010A0A61}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNodes_Shared.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AdditiveAngularBase.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AdditiveBlendSpace.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AimOffsetCompensation.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AirLean.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AngularBase.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AngularLean.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_CopyIKBones.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_Duck.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_FootIK.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_Gait.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_JumpFootIK.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_JumpingCompression.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_LandFootIK.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_LandingCompression.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_LandingPose.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_LocalSkeletalControlBase.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_LookTarget.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_MotionWeight.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_OffHandWeaponGrip.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_SpringBase.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_Strafe.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_TranslatePoleVectors.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_TraversalSpring.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\UnrealBase">
+      <UniqueIdentifier>{5173A37F-AAAA-3A38-9FFB-26CC7D880674}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\UnrealBase\AnimNode_MIBlendSpacePlayer.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\UnrealBase</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\MoveIt\Source\MoveIt\Public\Templates">
+      <UniqueIdentifier>{CDD813C1-5331-3915-B3FA-71152F0358EA}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveIt\Public\Templates\MICharacter_TwinStick.h">
+      <Filter>Plugins\MoveIt\Source\MoveIt\Public\Templates</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\MoveIt\Source\MoveItEditor">
+      <UniqueIdentifier>{D5D82924-A405-3CA9-9EC1-366DD53F2F22}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MoveIt\Source\MoveItEditor\MoveItEditor.Build.cs">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor</Filter>
+    </None>
+    <Filter Include="Plugins\MoveIt\Source\MoveItEditor\Private">
+      <UniqueIdentifier>{CA0C9251-568B-34E1-B8C0-03A6EE297ABF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_AdditiveBlendSpace.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_AimOffsetCompensation.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_AirLean.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_AngularLean.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_CopyIKBones.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_Duck.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_FootIK.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_Gait.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_JumpFootIK.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_JumpingCompression.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_LandFootIK.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_LandingCompression.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_LandingPose.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_LocalSkeletalControlBase.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_LookTarget.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_MotionWeight.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_OffHandWeaponGrip.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_SpringBase.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_Strafe.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_TranslatePoleVectors.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\AnimGraphNode_TraversalSpring.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Private\MoveItEditor.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MoveIt\Source\MoveItEditor\Public">
+      <UniqueIdentifier>{F68543E3-ACFE-3A7A-AD4B-DA32255CC8ED}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_AdditiveBlendSpace.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_AimOffsetCompensation.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_AirLean.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_AngularLean.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_CopyIKBones.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_Duck.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_FootIK.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_Gait.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_JumpFootIK.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_JumpingCompression.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_LandFootIK.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_LandingCompression.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_LandingPose.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_LocalSkeletalControlBase.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_LookTarget.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_MotionWeight.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_OffHandWeaponGrip.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_SpringBase.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_Strafe.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_TranslatePoleVectors.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\AnimGraphNode_TraversalSpring.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditor\Public\MoveItEditor.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditor\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\MoveIt\Source\MoveItEditorTools">
+      <UniqueIdentifier>{48A9DA96-185A-38F8-93E1-B0DFB9E32122}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\MoveItEditorTools.Build.cs">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools</Filter>
+    </None>
+    <Filter Include="Plugins\MoveIt\Source\MoveItEditorTools\Private">
+      <UniqueIdentifier>{3CF01B42-3BE6-3217-B1B1-7D2D51C940CE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MIAnimInstanceCustomization.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MIAnimInstanceCustomization.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MIAnimRetargetSorter.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MIBoneTools.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MICharacterCustomization.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MICharacterCustomization.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MITurnInPlaceTools.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Private\MoveItEditorTools.cpp">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MoveIt\Source\MoveItEditorTools\Public">
+      <UniqueIdentifier>{A5680B08-D382-3A9B-B711-676E7A0FC933}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Public\MIAnimRetargetSorter.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Public\MIBoneTools.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Public\MITurnInPlaceTools.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\MoveIt\Source\MoveItEditorTools\Public\MoveItEditorTools.h">
+      <Filter>Plugins\MoveIt\Source\MoveItEditorTools\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\UEGitPlugin-ue5\Source">
+      <UniqueIdentifier>{423C45A2-2BD5-305D-84EF-E193F09914CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\UEGitPlugin-ue5\Source\GitSourceControl">
+      <UniqueIdentifier>{6B3E0CC3-4FC4-31AC-9831-B22CEA9835A4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\GitSourceControl.Build.cs">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl</Filter>
+    </None>
+    <Filter Include="Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private">
+      <UniqueIdentifier>{981EDD5F-44CA-3AD2-A2DA-B1D556506B2D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlCommand.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlCommand.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlMenu.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlMenu.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlModule.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlModule.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlOperations.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlOperations.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlPrivatePCH.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlProvider.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlProvider.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlRevision.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlRevision.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlRunner.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlRunner.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlSettings.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlSettings.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlState.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlState.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlUtils.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\GitSourceControlUtils.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\IGitSourceControlWorker.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\SGitSourceControlSettings.cpp">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private\SGitSourceControlSettings.h">
+      <Filter>Plugins\UEGitPlugin-ue5\Source\GitSourceControl\Private</Filter>
+    </ClInclude>
     <Filter Include="Source\MetroidvaniaJam17">
       <UniqueIdentifier>{A082616D-4445-361A-94D0-3B43D8902706}</UniqueIdentifier>
     </Filter>

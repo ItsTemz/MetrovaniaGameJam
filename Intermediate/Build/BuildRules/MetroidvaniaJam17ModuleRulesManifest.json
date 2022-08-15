@@ -1,8 +1,19 @@
 {
 	"SourceFiles": [
-		"I:\\Unreal Projects\\MetroidvaniaJam17\\Source\\MetroidvaniaJam17\\MetroidvaniaJam17.Build.cs",
-		"I:\\Unreal Projects\\MetroidvaniaJam17\\Source\\MetroidvaniaJam17.Target.cs",
-		"I:\\Unreal Projects\\MetroidvaniaJam17\\Source\\MetroidvaniaJam17Editor.Target.cs"
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Source\\MetroidvaniaJam17\\MetroidvaniaJam17.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\RiderBlueprint.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\RiderGameControl.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\RiderLogging.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfoDump\\RiderShaderInfoDump.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\ElectronicNodes\\Source\\ElectronicNodes\\ElectronicNodes.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\MoveIt\\Source\\MoveIt\\MoveIt.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\MoveIt\\Source\\MoveItEditor\\MoveItEditor.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\MoveIt\\Source\\MoveItEditorTools\\MoveItEditorTools.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Plugins\\UEGitPlugin-ue5\\Source\\GitSourceControl\\GitSourceControl.Build.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Source\\MetroidvaniaJam17.Target.cs",
+		"I:\\Unreal Projects\\MetroidvaniaJam17\\MetrovaniaGameJam\\Source\\MetroidvaniaJam17Editor.Target.cs"
 	],
 	"EngineVersion": "5.0.3"
 }
