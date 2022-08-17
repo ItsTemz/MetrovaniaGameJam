@@ -3,11 +3,12 @@
 
 #include "Character/CharacterBase.h"
 
+#include "AbilitySystemComponent.h"
 #include "MIViewComponent.h"
 #include "Camera/CameraComponent.h"
 
 ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
-	:AMICharacter(OA)
+	: AMICharacter(OA)
 {
 	// So that we can use tick
 	PrimaryActorTick.bCanEverTick = true;
@@ -22,18 +23,79 @@ ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
 	FollowCamera->bUsePawnControlRotation = false;
 
 	ViewComponent = CreateDefaultSubobject<UMIViewComponent>(TEXT("ViewComponent"));
-
+	
+	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+	AbilitySystemComponent->SetIsReplicated(true);
+	AttributeSet = CreateDefaultSubobject<UAttributeSetBase>(TEXT("AttributeSet"));
 }
 
 void ACharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
-
 }
 
 void ACharacterBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+}
+
+void ACharacterBase::PreInitializeComponents()
+{
+	Super::PreInitializeComponents();
+	if(CombatComponent)
+	{
+		CombatComponent->Character = this;
+	}
+}
+
+void ACharacterBase::GiveAbility(TSubclassOf<UGameplayAbility> AbilityToGive)
+{
+	if (AbilitySystemComponent)
+	{
+		if (HasAuthority() && AbilityToGive)
+		{
+			AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(AbilityToGive, 1, 0));
+			AddAbilityToUI();
+		}
+		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
+}
+
+void ACharacterBase::AddAbilityToUI()
+{
+}
+
+bool ACharacterBase::isDead()
+{
+	return bIsDead;
+}
+
+void ACharacterBase::HandleDeath()
+{
+	bIsDead = true;
+}
+
+AWeapon* ACharacterBase::GetEquippedWeapon()
+{
+	if(CombatComponent == nullptr) return nullptr;
+	return CombatComponent->EquippedWeapon;
+}
+
+
+void ACharacterBase::SetOverlappingActor(AInteractable* Item)
+{
+	if(OverlappingItem)
+	{
+		OverlappingItem->ShowPickUpWidget(false);
+	}
+	OverlappingItem = Item;
+	if(IsLocallyControlled())
+	{
+		if(OverlappingItem)
+		{
+			OverlappingItem->ShowPickUpWidget(true);
+		}
+	}
 }
 
 #pragma region Inputs
@@ -56,7 +118,6 @@ void ACharacterBase::MoveRight(float Value)
 		AddRightMovementInput(Direction, Value);
 	}
 }
-
 
 void ACharacterBase::Turn(float Value)
 {

@@ -6,7 +6,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e4d974-7c75-4336-9e84-fb6e0231798c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TEST/AM_TEST.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TEST/GA_ExampleAbility.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/ActorComponents/AttributeSetBase.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/ActorComponents/CombatComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/ActorComponents/Weapon.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Actors/Interactable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/ActorComponents/AttributeSetBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/ActorComponents/CombatComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/ActorComponents/Weapon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Actors/Interactable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.patch_0.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.patch_0.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.patch_0.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.patch_0.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetroidvaniaJam17.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/MetroidvaniaJam17.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RD.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RD.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderBlueprint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderBlueprint.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderGameControl.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderGameControl.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLink.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLink.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLogging.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderLogging.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderShaderInfoDump.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UnrealEditor-RiderShaderInfoDump.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ElectronicNodes/Binaries/Win64/UnrealEditor-ElectronicNodes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ElectronicNodes/Binaries/Win64/UnrealEditor-ElectronicNodes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ElectronicNodes/Binaries/Win64/UnrealEditor-ElectronicNodes.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ElectronicNodes/Binaries/Win64/UnrealEditor-ElectronicNodes.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ElectronicNodes/Intermediate/Build/Win64/UnrealEditor/Development/ElectronicNodes/UnrealEditor-ElectronicNodes.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ElectronicNodes/Intermediate/Build/Win64/UnrealEditor/Development/ElectronicNodes/UnrealEditor-ElectronicNodes.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveIt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveIt.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveIt.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveIt.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditorTools.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditorTools.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditorTools.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Binaries/Win64/UnrealEditor-MoveItEditorTools.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveIt/UnrealEditor-MoveIt.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveIt/UnrealEditor-MoveIt.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditor/UnrealEditor-MoveItEditor.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditor/UnrealEditor-MoveItEditor.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditorTools/UnrealEditor-MoveItEditorTools.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditorTools/UnrealEditor-MoveItEditorTools.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditorTools/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditorTools/Timestamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/UE4GitPlugin-master/Binaries/Win64/UnrealEditor-GitSourceControl.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/UE4GitPlugin-master/Binaries/Win64/UnrealEditor-GitSourceControl.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/UE4GitPlugin-master/Binaries/Win64/UnrealEditor-GitSourceControl.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/UE4GitPlugin-master/Binaries/Win64/UnrealEditor-GitSourceControl.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Character/CharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Character/CharacterBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +212,9 @@
       <workItem from="1660573084123" duration="12000" />
       <workItem from="1660573321664" duration="6108000" />
       <workItem from="1660593268966" duration="4485000" />
+      <workItem from="1660606317140" duration="652000" />
+      <workItem from="1660681628584" duration="17644000" />
+      <workItem from="1660700132072" duration="1380000" />
     </task>
     <servers />
   </component>

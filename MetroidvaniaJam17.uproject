@@ -9,7 +9,8 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"MoveIt"
+				"MoveIt",
+				"GameplayAbilities"
 			]
 		}
 	],
