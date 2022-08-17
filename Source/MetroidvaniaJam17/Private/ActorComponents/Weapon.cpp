@@ -16,32 +16,19 @@ AWeapon::AWeapon()
 	PrimaryActorTick.bCanEverTick = true;
 
 	WeaponMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WeaponMesh"));
-	SetRootComponent(WeaponMesh);
+	WeaponMesh->SetupAttachment(GetRootComponent());
 
 	WeaponMesh->SetCollisionResponseToAllChannels(ECR_Block);
 	WeaponMesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
 	WeaponMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
-	AreaSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AreaSphere"));
-	AreaSphere->SetupAttachment(RootComponent);
-	AreaSphere->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-	AreaSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	
 }
 
 // Called when the game starts or when spawned
 void AWeapon::BeginPlay()
 {
 	Super::BeginPlay();
-	AreaSphere->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	AreaSphere->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
-	AreaSphere->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::OnSphereOverlap);
-	AreaSphere->OnComponentEndOverlap.AddDynamic(this, &AWeapon::OnSphereEndOverlap);
-
-	// if (PickupWidget)
-	// {
-	// 	PickupWidget->SetVisibility(false);
-	// }
+	
 }
 
 void AWeapon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
@@ -65,8 +52,6 @@ void AWeapon::Fire(const FVector& HitTarget)
 		WeaponMesh->PlayAnimation(FireAnimation, false);
 	}
 }
-
-
 
 void AWeapon::OnRep_WeaponState()
 {

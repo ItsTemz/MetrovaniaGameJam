@@ -4,6 +4,8 @@
 #include "Actors/Interactable.h"
 
 #include "Character/CharacterBase.h"
+#include "Components/SphereComponent.h"
+#include "Components/WidgetComponent.h"
 
 
 // Sets default values
@@ -11,8 +13,14 @@ AInteractable::AInteractable()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
-	// PickupWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("PickupWidget"));
+	ActorRootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+	SetRootComponent(ActorRootComponent);
+	PickUpWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("Widget"));
+	PickUpWidget->SetupAttachment(GetRootComponent());
+	AreaSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AreaSphere"));
+	AreaSphere->SetupAttachment(GetRootComponent());
+	AreaSphere->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+	AreaSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
 void AInteractable::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
@@ -37,17 +45,25 @@ void AInteractable::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent,
 
 void AInteractable::ShowPickUpWidget(bool bShowWidget) const
 {
-	// if (PickupWidget)
-	// {
-	// 	PickupWidget->SetVisibility(bShowWidget);
-	// }
+	if (PickUpWidget)
+	{
+		PickUpWidget->SetVisibility(bShowWidget);
+	}
 }
 
 // Called when the game starts or when spawned
 void AInteractable::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	AreaSphere->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	AreaSphere->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
+	AreaSphere->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::OnSphereOverlap);
+	AreaSphere->OnComponentEndOverlap.AddDynamic(this, &AWeapon::OnSphereEndOverlap);
+
+	if (PickUpWidget)
+	{
+		PickUpWidget->SetVisibility(false);
+	}
 }
 
 // Called every frame

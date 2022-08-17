@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/WidgetComponent.h"
 #include "GameFramework/Actor.h"
 #include "Interactable.generated.h"
 
@@ -15,10 +14,13 @@ class METROIDVANIAJAM17_API AInteractable : public AActor
 public:
 	// Sets default values for this actor's properties
 	AInteractable();
-
-	// UPROPERTY(EditDefaultsOnly, Category = "ItemProperties")
-	// UWidgetComponent* PickupWidget;
-
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Root")
+	USceneComponent* ActorRootComponent;
+	UPROPERTY(EditAnywhere, Category = "Widgets")
+	class UWidgetComponent* PickUpWidget;
+	UPROPERTY(EditDefaultsOnly, Category = "Weapon Properties")
+	class USphereComponent* AreaSphere;
+	
 	void ShowPickUpWidget(bool bShowWidget) const;
 	
 	UFUNCTION()

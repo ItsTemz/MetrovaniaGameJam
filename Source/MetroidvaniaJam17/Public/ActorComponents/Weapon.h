@@ -40,9 +40,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon Properties")
 	USkeletalMeshComponent* WeaponMesh;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Weapon Properties")
-	class USphereComponent* AreaSphere;
-
 	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties", ReplicatedUsing = OnRep_WeaponState)
 	EWeaponState WeaponState;
 	
