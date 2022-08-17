@@ -3,27 +3,69 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "AbilitySystemInterface.h"
 #include "MICharacter.h"
 #include "MISpringArmComponent.h"
+#include "Abilities/GameplayAbility.h"
+#include "ActorComponents/AttributeSetBase.h"
+#include "ActorComponents/CombatComponent.h"
 #include "CharacterBase.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter
+class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 	ACharacterBase(const FObjectInitializer& OA);
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
+	virtual void PreInitializeComponents() override;
+	
+public:
 
+#pragma region GameplayAbilitySystem
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
+	UAbilitySystemComponent* AbilitySystemComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
+	UAttributeSetBase* AttributeSet;
+
+	UFUNCTION(BlueprintCallable, Category = "GAS", meta = (DisplayName = "Give Ability"))
+	void GiveAbility(TSubclassOf<UGameplayAbility> AbilityToGive);
+
+	UFUNCTION(BlueprintCallable, Category = "GAS")
+	void AddAbilityToUI();
+#pragma endregion GameplayAbilitySystem
+
+#pragma region PlayerDeath
+	// The players current death state
+	bool bIsDead = false;
+
+	/**
+	 * Checks whether or not the character is dead
+	 * @returns bIsDead
+	 */
+	UFUNCTION(BlueprintGetter, Category = "Character")
+	bool isDead();
+	
+	/**
+	 * Handles what should happen when the player health reaches 0
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	void HandleDeath();
+
+#pragma endregion PlayerDeath
 protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UMISpringArmComponent* CameraBoom;
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	UCameraComponent* FollowCamera;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "CombatComponent")
+	UCombatComponent* CombatComponent;	
 private:
 	/**
 	* Handles camera blending and character state changes
@@ -31,6 +73,14 @@ private:
 	*/
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UMIViewComponent* ViewComponent;
+
+	// UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Widget, meta = (AllowPrivateAccess = "true"))
+	// UWidgetComponent* OverHeadWidget;
+	UPROPERTY()
+	AInteractable* OverlappingItem;
+	UPROPERTY(EditAnywhere, Category = Combat)
+	UAnimMontage* FireWeaponMontage;
+
 
 #pragma region Input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -67,4 +117,9 @@ public:
 	FORCEINLINE UCameraComponent* GetCamera() const { return FollowCamera; }
 	// Getter for the View Component
 	FORCEINLINE UMIViewComponent* GetViewComponent() const { return ViewComponent; }
+	
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const {return AbilitySystemComponent; }
+	AWeapon* GetEquippedWeapon();
+	//FVector GetHitTarget() const;
+	void SetOverlappingActor(AInteractable* Item);
 };
