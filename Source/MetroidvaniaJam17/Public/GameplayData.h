@@ -19,6 +19,44 @@ enum class EActionMode : uint8
 };
 
 
+UENUM(BlueprintType)
+enum class EWeaponLocation : uint8
+{
+	EWL_Back UMETA(DisplayName = "Back"),
+	EWL_RightHand UMETA(DisplayName = "RightHand"),
+	EWL_LeftHand UMETA(DisplayName = "LeftHand"),
+
+	EWL_DEFAULT UMETA(DisplayName = "DEFAULT")
+};
+
+UENUM(BlueprintType)
+enum class EWeaponProjectileType : uint8
+{
+	EWPT_HitScanWeapon UMETA(DisplayName = "HitScanWeapon"),
+	EWPT_ProjectileWeapon UMETA(DisplayName = "ProjectileWeapon"),
+
+	EWPT_DEFAULT UMETA(DisplayName = "DEFAULT")
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * 
  */
