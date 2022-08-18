@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameplayData.h"
+#include "MITypes.h"
 #include "Weapon.h"
 #include "Components/ActorComponent.h"
 #include "CombatComponent.generated.h"
@@ -40,7 +42,21 @@ protected:
 	FOnWeaponChangedDelegate WeaponChangedDelegate;
 
 #pragma endregion Weapon
-	
+
+#pragma region Movement
+
+	UPROPERTY()
+	bool bAiming;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Combat")
+	EActionMode ActionMode;
+
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void SetActionMode(const EActionMode InActionMode);
+
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void SetStrafeOrientation(EMIStrafeOrientation inStrafeOrientation, EMIMovementSystem inMovementSystem);
+
+#pragma endregion Movement
 public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,

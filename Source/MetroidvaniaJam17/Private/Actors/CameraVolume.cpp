@@ -35,6 +35,7 @@ void ACameraVolume::BeginPlay()
 	if(Box)
 	{
 		Box->OnComponentBeginOverlap.AddDynamic(this, &ACameraVolume::BoxOverlap);
+		Box->OnComponentEndOverlap.AddDynamic(this, &ACameraVolume::BoxEndOverlap);
 	}
 
 	Controller = Cast<AMetroidController>(GetWorld()->GetFirstPlayerController());
@@ -53,6 +54,7 @@ void ACameraVolume::BoxOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 	if(Character)
 	{
 		Character->SetCurrentCameraVolume(this);
+		Character->bUseViewRot = false;
 	}
 	if(Controller)
 	{
@@ -60,6 +62,18 @@ void ACameraVolume::BoxOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 		Controller->SetViewTargetWithBlend(this, ChangeViewTargetBlendTime, EViewTargetBlendFunction::VTBlend_EaseInOut, BlendExp, true);
 	}
 }
+
+void ACameraVolume::BoxEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	Character = Cast<ACharacterBase>(OtherActor);
+	if(Controller && Character)
+	{
+		Character->bUseViewRot = true;
+		Controller->SetViewTargetWithBlend(Character, ChangeViewTargetBlendTime, EViewTargetBlendFunction::VTBlend_EaseInOut, BlendExp, true);
+	}
+}
+
 
 void ACameraVolume::MoveCamera(float Deltatime)
 {
