@@ -10,6 +10,7 @@
 #include "Abilities/GameplayAbility.h"
 #include "ActorComponents/AttributeSetBase.h"
 #include "ActorComponents/CombatComponent.h"
+#include "Actors/CameraVolume.h"
 #include "CharacterBase.generated.h"
 
 /**
@@ -26,6 +27,8 @@ class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter, public IAbilit
 	
 public:
 
+	UPROPERTY(BlueprintReadWrite, Category = "CameraVolume")
+	ACameraVolume* CurrentCameraVolume;
 #pragma region GameplayAbilitySystem
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
 	UAbilitySystemComponent* AbilitySystemComponent;
@@ -80,7 +83,11 @@ private:
 	AInteractable* OverlappingItem;
 	UPROPERTY(EditAnywhere, Category = Combat)
 	UAnimMontage* FireWeaponMontage;
+	
+	UFUNCTION()
+	void EquipWeapon();
 
+	
 
 #pragma region Input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -117,6 +124,9 @@ public:
 	FORCEINLINE UCameraComponent* GetCamera() const { return FollowCamera; }
 	// Getter for the View Component
 	FORCEINLINE UMIViewComponent* GetViewComponent() const { return ViewComponent; }
+
+	UFUNCTION(BlueprintCallable)
+	FORCEINLINE void SetCurrentCameraVolume(ACameraVolume* CameraVolume) {CurrentCameraVolume = CameraVolume; }
 	
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const {return AbilitySystemComponent; }
 	AWeapon* GetEquippedWeapon();

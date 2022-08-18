@@ -36,18 +36,24 @@ void UCombatComponent::EquipWeapon(AWeapon* Weapon)
 
 void UCombatComponent::ChangeWeapon(AWeapon* Weapon)
 {
-	if(Character == nullptr || Weapon == nullptr) return;
-
-	EquippedWeapon = Weapon;
-	EquippedWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
-
-	if(const USkeletalMeshSocket* HandSocket = Character->GetMesh()->GetSocketByName(FName("RightHandSocket")))
+	if(!Character)
 	{
-		HandSocket->AttachActor(EquippedWeapon, Character->GetMesh());
+		Character = Cast<ACharacterBase>(GetOwner());
 	}
-	EquippedWeapon->SetOwner(Character);
-	Character->GetCharacterMovement()->bOrientRotationToMovement = false;
-	Character->bUseControllerRotationYaw = true;
+	if(Weapon && Character)
+	{
+		EquippedWeapon = Weapon;
+		EquippedWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
+
+		if(const USkeletalMeshSocket* HandSocket = Character->GetMesh()->GetSocketByName(FName("RightHandSocket")))
+		{
+			HandSocket->AttachActor(EquippedWeapon, Character->GetMesh());
+		}
+		EquippedWeapon->SetOwner(Character);
+		//Character->GetCharacterMovement()->bOrientRotationToMovement = false;
+		//Character->bUseControllerRotationYaw = true;
+	}
+
 }
 
 #pragma endregion Weapon

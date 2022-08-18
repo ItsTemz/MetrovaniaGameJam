@@ -27,6 +27,8 @@ ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
 	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	AbilitySystemComponent->SetIsReplicated(true);
 	AttributeSet = CreateDefaultSubobject<UAttributeSetBase>(TEXT("AttributeSet"));
+
+	CombatComponent = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComp"));
 }
 
 void ACharacterBase::BeginPlay()
@@ -80,7 +82,14 @@ AWeapon* ACharacterBase::GetEquippedWeapon()
 	if(CombatComponent == nullptr) return nullptr;
 	return CombatComponent->EquippedWeapon;
 }
-
+void ACharacterBase::EquipWeapon()
+{
+	if(OverlappingItem)
+	{
+		if(AWeapon* Weapon = Cast<AWeapon>(OverlappingItem)) CombatComponent->ChangeWeapon(Weapon);
+	}
+	
+}
 
 void ACharacterBase::SetOverlappingActor(AInteractable* Item)
 {
@@ -151,6 +160,8 @@ void ACharacterBase::SprintButtonReleased()
 	StopSprinting();
 }
 
+
+
 void ACharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -159,6 +170,7 @@ void ACharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ACharacterBase::CrouchButtonPressed);
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ACharacterBase::SprintButtonPressed);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ACharacterBase::SprintButtonReleased);
+	PlayerInputComponent->BindAction("Equip", IE_Released, this, &ACharacterBase::EquipWeapon);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ACharacterBase::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterBase::MoveRight);
