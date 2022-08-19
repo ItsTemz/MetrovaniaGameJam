@@ -56,6 +56,12 @@ protected:
 								 bool bFromSweep,
 								 const FHitResult& SweepResult
 	);
+	UFUNCTION()
+	void BoxEndOverlap(UPrimitiveComponent* OverlappedComponent,
+								 AActor* OtherActor,
+								 UPrimitiveComponent* OtherComp,
+								 int32 OtherBodyIndex
+	);
 
 	UPROPERTY(EditAnywhere, Category = "CameraSettings")
 	float ChangeViewTargetBlendTime = 2.f;

@@ -6,15 +6,16 @@
 #include "AbilitySystemComponent.h"
 #include "MIViewComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Components/DecalComponent.h"
 
 ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
-	: AMICharacter(OA)
+	: AMICharacter_TwinStick(OA)
 {
 	// So that we can use tick
 	PrimaryActorTick.bCanEverTick = true;
 
 	CameraBoom = CreateDefaultSubobject<UMISpringArmComponent>(TEXT("CameraBoom"));
-	CameraBoom->SetupAttachment(GetMesh());
+	CameraBoom->SetupAttachment(GetRootComponent());
 	CameraBoom->TargetArmLength = 360.f;
 	CameraBoom->bUsePawnControlRotation = true;
 
@@ -29,16 +30,23 @@ ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
 	AttributeSet = CreateDefaultSubobject<UAttributeSetBase>(TEXT("AttributeSet"));
 
 	CombatComponent = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComp"));
+
+	MouseCursorDecal = CreateDefaultSubobject<UDecalComponent>(TEXT("MouseCursorDecal"));
+	MouseCursorDecal->SetupAttachment(GetRootComponent());
+	MouseCursorDecal->DecalSize = FVector(16.f, 32.f, 32.f);
+	MouseCursorDecal->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
 }
 
 void ACharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
+	
 }
 
 void ACharacterBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//DrawCursor(); //I WILL CRASH EDITOR SOWI
 }
 
 void ACharacterBase::PreInitializeComponents()
@@ -112,8 +120,21 @@ void ACharacterBase::MoveForward(float Value)
 {
 	if (Controller != nullptr && Value != 0.f)
 	{
-		const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
-		const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X));
+		//const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
+		FRotator YawRotation;
+		FVector Direction;
+		if(bUseViewRot)
+		{
+			YawRotation = FRotator(0.f, ViewRot.Yaw, 0.f);
+			Direction = UKismetMathLibrary::GetForwardVector(YawRotation);
+		}
+		else
+		{
+			YawRotation = FRotator(0.f, Controller->GetViewTarget()->GetActorRotation().Yaw, 0.f);
+			Direction = UKismetMathLibrary::GetForwardVector(YawRotation);
+		}
+
+		//const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X));
 		AddForwardMovementInput(Direction, Value);
 	}
 }
@@ -122,20 +143,47 @@ void ACharacterBase::MoveRight(float Value)
 {
 	if (Controller != nullptr && Value != 0.f)
 	{
-		const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
-		const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y));
+		//const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
+		FRotator YawRotation;
+		FVector Direction;
+		if(bUseViewRot)
+		{
+			YawRotation = FRotator(0.f, ViewRot.Yaw, 0.f);
+			Direction = UKismetMathLibrary::GetRightVector(YawRotation);
+		}
+		else
+		{
+			YawRotation = FRotator(0.f, Controller->GetViewTarget()->GetActorRotation().Yaw, 0.f);
+			Direction = UKismetMathLibrary::GetRightVector(YawRotation);
+		}
+		
+		//const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y));
 		AddRightMovementInput(Direction, Value);
 	}
 }
 
 void ACharacterBase::Turn(float Value)
 {
-	AddControllerYawInput(Value);
+	if(!bUseMousePointer)
+	{
+		AddControllerYawInput(Value);
+	}
+	else
+	{
+		ReceiveMouseTurnInput(Value);
+		if(!UKismetMathLibrary::NearlyEqual_FloatFloat(Value, 0.f) && MouseCursorDecal)
+		{
+			MouseCursorDecal->SetHiddenInGame(false);
+		}
+	}
 }
 
 void ACharacterBase::LookUp(float Value)
 {
-	AddControllerPitchInput(Value);
+	if(!bUseMousePointer)
+	{
+		AddControllerPitchInput(Value);
+	}
 }
 
 void ACharacterBase::CrouchButtonPressed()
@@ -160,6 +208,33 @@ void ACharacterBase::SprintButtonReleased()
 	StopSprinting();
 }
 
+void ACharacterBase::DrawCursor()
+{
+	if(!Controller)
+	{
+		Controller = Cast<AMetroidController>(GetWorld()->GetFirstPlayerController());
+	}
+	if(Controller && Controller->IsLocalController() && MouseCursorDecal)
+	{
+		FHitResult HitResult;
+		//TArray<ECollisionChannel> ObjectTypes;
+		TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+		ObjectTypes.Add(EObjectTypeQuery::ObjectTypeQuery1);
+		ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldStatic));
+
+		
+		
+		PlayerController->GetHitResultUnderCursorForObjects(ObjectTypes, true, HitResult);
+		if(HitResult.bBlockingHit)
+		{
+			const FRotator RotFromX = UKismetMathLibrary::MakeRotFromX(HitResult.ImpactNormal);
+			FTransform NewTransform;
+			NewTransform.SetLocation(HitResult.Location);
+			NewTransform.SetRotation(FQuat(RotFromX));
+			MouseCursorDecal->SetWorldTransform(NewTransform);
+		}
+	}
+}
 
 
 void ACharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -175,6 +250,6 @@ void ACharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("MoveForward", this, &ACharacterBase::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterBase::MoveRight);
 	PlayerInputComponent->BindAxis("Turn", this, &ACharacterBase::Turn);
-	PlayerInputComponent->BindAxis("LookUp", this, &ACharacterBase::LookUp);
+	//PlayerInputComponent->BindAxis("LookUp", this, &ACharacterBase::LookUp);
 }
 #pragma endregion Inputs

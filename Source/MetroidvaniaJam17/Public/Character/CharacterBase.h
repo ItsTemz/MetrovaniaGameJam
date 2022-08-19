@@ -11,13 +11,14 @@
 #include "ActorComponents/AttributeSetBase.h"
 #include "ActorComponents/CombatComponent.h"
 #include "Actors/CameraVolume.h"
+#include "Templates/MICharacter_TwinStick.h"
 #include "CharacterBase.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter, public IAbilitySystemInterface
+class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter_TwinStick, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 	ACharacterBase(const FObjectInitializer& OA);
@@ -61,6 +62,11 @@ public:
 	void HandleDeath();
 
 #pragma endregion PlayerDeath
+
+	bool bUseViewRot = true;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Camera")
+	FRotator ViewRot = FRotator(0.f, 45.f, 0.f);
 protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UMISpringArmComponent* CameraBoom;
@@ -68,7 +74,13 @@ protected:
 	UCameraComponent* FollowCamera;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "CombatComponent")
-	UCombatComponent* CombatComponent;	
+	UCombatComponent* CombatComponent;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera)
+	bool bUseMousePointer = true;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Movement")
+	UDecalComponent* MouseCursorDecal;
 private:
 	/**
 	* Handles camera blending and character state changes
@@ -87,7 +99,7 @@ private:
 	UFUNCTION()
 	void EquipWeapon();
 
-	
+	AMetroidController* PlayerController;
 
 #pragma region Input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -117,6 +129,7 @@ private:
 	void SprintButtonPressed();
 	void SprintButtonReleased();
 
+	void DrawCursor();
 #pragma endregion Input
 
 public:

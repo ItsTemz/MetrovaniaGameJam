@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Abilities/GameplayAbility.h"
 #include "Actors/Interactable.h"
 #include "GameFramework/Actor.h"
 #include "Weapon.generated.h"
@@ -28,8 +29,12 @@ class METROIDVANIAJAM17_API AWeapon : public AInteractable
 	
 
 	virtual void Fire(const FVector& HitTarget);
+	
 public:
 
+	UPROPERTY(EditAnywhere, Category = "Ability")
+	TArray<UGameplayAbility*> AbilitiesToGive;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
