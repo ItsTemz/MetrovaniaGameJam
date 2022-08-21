@@ -5,9 +5,12 @@
 
 #include "MICharacterMovementComponent.h"
 #include "MIViewComponent.h"
+#include "Actors/TargetComponent.h"
 #include "Character/CharacterBase.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Weapons/Weapon.h"
 
 
 // Sets default values for this component's properties
@@ -44,10 +47,12 @@ void UCombatComponent::ChangeWeapon(AWeapon* Weapon)
 	{
 		EquippedWeapon = Weapon;
 		EquippedWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
+		//EquippedWeapon->InitDataAsset();
 
-		if (const USkeletalMeshSocket* HandSocket = Character->GetMesh()->GetSocketByName(FName("RightHandSocket")))
+		if (const USkeletalMeshSocket* AttachSocket = Character->GetMesh()->GetSocketByName(
+			EquippedWeapon->GetSocketName()))
 		{
-			HandSocket->AttachActor(EquippedWeapon, Character->GetMesh());
+			AttachSocket->AttachActor(EquippedWeapon, Character->GetMesh());
 		}
 		EquippedWeapon->SetOwner(Character);
 	}
@@ -154,6 +159,63 @@ void UCombatComponent::SetStrafeOrientation(EMIStrafeOrientation inStrafeOrienta
 	Character->StrafeOrientation = inStrafeOrientation;
 	Character->SetMovementSystem(inMovementSystem);
 }
+
+AActor* UCombatComponent::GetBestTarget()
+{
+	AActor* LocalBestTarget = nullptr;
+	float LocalCurrentValue = 0.f;
+	float LocalBestValue = 0.f;
+	AActor* LocalCurrentTarget = nullptr;
+	TArray<AActor*> IgnoreActors;
+	IgnoreActors.Init(GetOwner(), 1);
+	TArray<AActor*> OutActors;
+	UClass* SeekClass = AActor::StaticClass();
+	TArray<TEnumAsByte<EObjectTypeQuery>> TraceObjectTypes;
+	TraceObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldStatic));
+	TraceObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_Pawn));
+	UKismetSystemLibrary::SphereOverlapActors(GetWorld(), Character->GetActorLocation(), TargetingRange,
+	                                          TraceObjectTypes, SeekClass, IgnoreActors, OutActors);
+
+	for(AActor* Actor : OutActors)
+	{
+		LocalCurrentTarget = Actor;
+		if(LocalCurrentTarget->GetComponentByClass(TSubclassOf<UTargetComponent>()))
+		{
+			const FVector CurrentTargetLoc = LocalCurrentTarget->GetActorLocation();
+			const FVector ActorLoc = GetOwner()->GetActorLocation();
+			const FVector ActorForwardVector = GetOwner()->GetActorForwardVector();
+			const FVector UnitDirVec = UKismetMathLibrary::GetDirectionUnitVector(ActorLoc, CurrentTargetLoc);
+			LocalCurrentValue = UKismetMathLibrary::Dot_VectorVector(ActorForwardVector, UnitDirVec);
+			if(LocalCurrentValue > LocalBestValue || !LocalBestTarget)
+			{
+				LocalBestValue = LocalCurrentValue;
+				LocalBestTarget = LocalCurrentTarget;
+			}
+		}
+	}
+	if(LocalBestValue)
+	{
+		if(UKismetMathLibrary::DegAcos(LocalBestValue) <= TargetingConeAngle)
+		{
+			return LocalBestTarget;
+		}
+		return nullptr;
+	}
+	return nullptr;
+}
+
+void UCombatComponent::SetCurrentTarget(AActor* Target)
+{
+	if (!CurrentTarget)
+	{
+		EndTarget();
+
+		CurrentTarget = Target;
+
+		BeginTarget();
+	}
+}
+
 
 // Called every frame
 void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType,

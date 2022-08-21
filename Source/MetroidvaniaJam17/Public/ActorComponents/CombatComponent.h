@@ -5,8 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameplayData.h"
 #include "MITypes.h"
-#include "Weapon.h"
+#include "Actors/TargetActor.h"
 #include "Components/ActorComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "CombatComponent.generated.h"
 class AWeapon;
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnWeaponChangedDelegate, AWeapon*, ChangedWeapon);
@@ -24,7 +25,7 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Character")
 	ACharacterBase* Character;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly)
 	AWeapon* EquippedWeapon;
 	
 protected:
@@ -57,6 +58,37 @@ protected:
 	void SetStrafeOrientation(EMIStrafeOrientation inStrafeOrientation, EMIMovementSystem inMovementSystem);
 
 #pragma endregion Movement
+
+#pragma region Targetting
+public:
+	// Combat State
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	EPlayerState PlayerState;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Targeting|Constants")
+	float TargetingRange = 900.f;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Targeting|Constants")
+	float TargetingConeAngle = 35.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Targeting")
+	AActor* CurrentTarget;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Targeting")
+	AActor* TargetActor;
+	TSubclassOf<ATargetActor*> TargetMarker;
+	
+	UFUNCTION(BlueprintCallable, Category = "Targeting")
+	AActor* GetBestTarget();
+
+	UFUNCTION(BlueprintCallable, Category = "Targeting")
+	void SetCurrentTarget(AActor* Target);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Targeting")
+	void EndTarget();
+	
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Targeting")
+	void BeginTarget();
+
+#pragma endregion Targetting
 public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,

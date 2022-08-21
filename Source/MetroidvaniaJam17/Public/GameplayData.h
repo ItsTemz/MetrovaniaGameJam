@@ -38,6 +38,16 @@ enum class EWeaponProjectileType : uint8
 	EWPT_DEFAULT UMETA(DisplayName = "DEFAULT")
 };
 
+UENUM(BlueprintType)
+enum class EPlayerState :uint8
+{
+	EPS_Normal UMETA(DisplayName = "Normal"),
+	EPS_Targeting UMETA(DisplayName = "Targeting"),
+	EPS_Combat UMETA(DisplayName = "Combat"),
+
+	EPS_Default UMETA(DisplayName = "Default")
+	
+};
 
 
 

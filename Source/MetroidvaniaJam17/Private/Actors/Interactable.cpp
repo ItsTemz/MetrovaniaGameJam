@@ -57,8 +57,8 @@ void AInteractable::BeginPlay()
 	Super::BeginPlay();
 	AreaSphere->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	AreaSphere->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
-	AreaSphere->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::OnSphereOverlap);
-	AreaSphere->OnComponentEndOverlap.AddDynamic(this, &AWeapon::OnSphereEndOverlap);
+	AreaSphere->OnComponentBeginOverlap.AddDynamic(this, &AInteractable::OnSphereOverlap);
+	AreaSphere->OnComponentEndOverlap.AddDynamic(this, &AInteractable::OnSphereEndOverlap);
 
 	if (PickUpWidget)
 	{

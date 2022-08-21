@@ -11,6 +11,7 @@
 #include "ActorComponents/AttributeSetBase.h"
 #include "ActorComponents/CombatComponent.h"
 #include "Actors/CameraVolume.h"
+#include "Actors/Interactable.h"
 #include "Templates/MICharacter_TwinStick.h"
 #include "CharacterBase.generated.h"
 
@@ -30,6 +31,10 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, Category = "CameraVolume")
 	ACameraVolume* CurrentCameraVolume;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "CombatComponent")
+	UCombatComponent* CombatComponent;
+
 #pragma region GameplayAbilitySystem
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
 	UAbilitySystemComponent* AbilitySystemComponent;
@@ -73,8 +78,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	UCameraComponent* FollowCamera;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "CombatComponent")
-	UCombatComponent* CombatComponent;
+	
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera)
 	bool bUseMousePointer = true;

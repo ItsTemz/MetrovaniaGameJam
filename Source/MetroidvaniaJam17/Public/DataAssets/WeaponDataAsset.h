@@ -22,13 +22,9 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponDetails")
 	EWeaponLocation WeaponLocation;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponDetails")
-	USkeletalMesh* MainWeaponMesh;
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponDetails")
-	USkeletalMesh* OffHandWeaponMesh;
+	USkeletalMesh* WeaponMesh;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponDetails")
 	TSubclassOf<UAnimInstance> WeaponAnimBP;
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponDetails")
-	float WeaponStrength;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponDetails|Cosmetics")
 	USoundCue* HitSound;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponDetails|Cosmetics")
@@ -37,7 +33,7 @@ public:
 	
 	/*
 	 * The skills that this weapon will give the player
-	 *
+	 */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Skills")
 	TArray<UAbilityDataSet* > Skills;
 

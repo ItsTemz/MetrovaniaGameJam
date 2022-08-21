@@ -55,12 +55,13 @@ void ACameraVolume::BoxOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 	{
 		Character->SetCurrentCameraVolume(this);
 		Character->bUseViewRot = false;
+		if(Controller)
+		{
+			Controller->SetCurrentCameraVolume(this);
+			Controller->SetViewTargetWithBlend(this, ChangeViewTargetBlendTime, EViewTargetBlendFunction::VTBlend_EaseInOut, BlendExp, true);
+		}
 	}
-	if(Controller)
-	{
-		Controller->SetCurrentCameraVolume(this);
-		Controller->SetViewTargetWithBlend(this, ChangeViewTargetBlendTime, EViewTargetBlendFunction::VTBlend_EaseInOut, BlendExp, true);
-	}
+	
 }
 
 void ACameraVolume::BoxEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,

@@ -7,6 +7,7 @@
 #include "MIViewComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/DecalComponent.h"
+#include "Weapons/Weapon.h"
 
 ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
 	: AMICharacter_TwinStick(OA)
