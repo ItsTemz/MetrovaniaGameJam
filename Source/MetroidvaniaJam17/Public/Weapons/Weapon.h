@@ -30,7 +30,7 @@ class METROIDVANIAJAM17_API AWeapon : public AInteractable
 
 	
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	virtual void Fire(const FVector& HitTarget);
+	virtual void Fire(const FVector& HitTarget, bool bShouldHome);
 	
 public:
 

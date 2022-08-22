@@ -61,7 +61,6 @@ void ACameraVolume::BoxOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 			Controller->SetViewTargetWithBlend(this, ChangeViewTargetBlendTime, EViewTargetBlendFunction::VTBlend_EaseInOut, BlendExp, true);
 		}
 	}
-	
 }
 
 void ACameraVolume::BoxEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,

@@ -100,7 +100,7 @@ void AWeapon::Tick(float DeltaTime)
 
 
 
-void AWeapon::Fire(const FVector& HitTarget)
+void AWeapon::Fire(const FVector& HitTarget, bool bShouldHome)
 {
 	if(FireAnimation)
 	{
@@ -132,7 +132,6 @@ void AWeapon::Fire(const FVector& HitTarget)
 					TargetRotation,
 					SpawnParams
 					);
-				Projectile->SetOwner(GetOwner());
 				
 			}
 		}
