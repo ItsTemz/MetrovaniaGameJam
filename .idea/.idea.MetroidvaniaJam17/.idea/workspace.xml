@@ -6,30 +6,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e4d974-7c75-4336-9e84-fb6e0231798c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Assets/Props/Claw/FrontColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Assets/Props/Claw/claw_mark_2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Assets/Props/Claw/claw_mark_2_PhysicsAsset.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Assets/Props/Claw/claw_mark_2_Skeleton.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/ADS_ClawAbility.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/BP_ClawCable.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/BP_ClawHook.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/EGrappleState.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GA_ClawAbility.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GrappleComponent.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/SM_Claw.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/SM_ClawHook.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Enemies/BP_Enemy.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Moveable.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/0/4I/L12SST82FHCTAD83SNSSFM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/2/AW/JXG6PQZA7PWZOKPCOC75X7.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/4K/CNLS7NRVMGX7DR8PY6P9T5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/4/JT/WIVURC1XYFS2XWN2NZ0TJK.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/4/L9/8OC3DOXULRHQEFO2T2PCU5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/8/5U/HGTBCWR70FBJ9CEGJU19T8.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/9/9Z/ZWIV2S3IPBXLWK9E754JQ5.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/9/K8/U3Y2ZHKTFTX18BU2SUE9V3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/C/BV/ZHD8MT0NX2ROCJPDRSG3AX.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/E/RL/B3A4MCNNNEPX1EUKI9QGY5.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/GA_TennisBall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/GA_TennisBall.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Camera/BP_CameraVolume.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Camera/BP_CameraVolume.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Targeting/BP_TargetActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Targeting/BP_TargetActor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Weapons/BP_BaseProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Weapons/BP_BaseProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Weapons/WDA_ExampleWeaponDataAsset.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Weapons/WDA_ExampleWeaponDataAsset.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/0/UI/PA98LGWSU8LOD3JYFPVZVN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/0/UI/PA98LGWSU8LOD3JYFPVZVN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Levels/L_MechanicsTestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Levels/L_MechanicsTestLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/2V/E9VV129WEX5E95AQXNFY8I.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/2V/E9VV129WEX5E95AQXNFY8I.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/9R/14DDNO8DGBM9XVNISRC17L.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/9R/14DDNO8DGBM9XVNISRC17L.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/9R/14DDNO8DGBM9XVNISRC17L.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/E6/OFWP2QF53V0I2NP4Z92KKS.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/E6/OFWP2QF53V0I2NP4Z92KKS.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/6/78/VFCLQQWLJJIZP7UDA1Y90K.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/6/78/VFCLQQWLJJIZP7UDA1Y90K.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/6/ER/7FPXHOFVRPBYT1LA2F86NR.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/6/ER/7FPXHOFVRPBYT1LA2F86NR.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/9/D7/NECZMOYY0PAAMQDOF3AVR4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/9/D7/NECZMOYY0PAAMQDOF3AVR4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/A/0R/GOE7X54G4W9HZM21UA1Y5Z.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/A/0R/GOE7X54G4W9HZM21UA1Y5Z.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/B/OV/34M6J7TKX3APLCVCK34SKM.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/B/OV/34M6J7TKX3APLCVCK34SKM.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/5/QA/36QZB3AENIZVVI0CBF7R93.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/5/QA/36QZB3AENIZVVI0CBF7R93.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/6/78/VFCLQQWLJJIZP7UDA1Y90K.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/6/ER/7FPXHOFVRPBYT1LA2F86NR.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/D/9U/F0ZIOBEK4MG12M40HUT7JL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/D/9U/F0ZIOBEK4MG12M40HUT7JL.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Content/Models/Character/Mesh/SKL_MannyBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Content/Models/Character/Mesh/SKL_MannyBase.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Actors/CameraVolume.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Actors/CameraVolume.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Weapons/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Weapons/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Weapons/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Weapons/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +222,7 @@
       <workItem from="1661094629828" duration="2308000" />
       <workItem from="1661097652392" duration="1708000" />
       <workItem from="1661196714280" duration="10090000" />
+      <workItem from="1661571034519" duration="5259000" />
     </task>
     <servers />
   </component>
