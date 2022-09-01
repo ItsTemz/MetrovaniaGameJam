@@ -10,7 +10,8 @@
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"MoveIt",
-				"GameplayAbilities"
+				"GameplayAbilities",
+				"Engine"
 			]
 		}
 	],

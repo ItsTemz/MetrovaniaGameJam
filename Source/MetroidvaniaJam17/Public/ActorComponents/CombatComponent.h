@@ -27,10 +27,27 @@ public:
 
 	UPROPERTY(BlueprintReadOnly)
 	AWeapon* EquippedWeapon;
-	
+
+	/**
+		 *	Textures For the Weapon Cross-hairs
+		 */
+    
+	UPROPERTY(EditAnywhere, Category = Crosshairs)
+	UTexture2D* CrossHairsCenter;
+	UPROPERTY(EditAnywhere, Category = Crosshairs)
+	UTexture2D* CrossHairsLeft;
+	UPROPERTY(EditAnywhere, Category = Crosshairs)
+	UTexture2D* CrossHairsRight;
+	UPROPERTY(EditAnywhere, Category = Crosshairs)
+	UTexture2D* CrossHairsTop;
+	UPROPERTY(EditAnywhere, Category = Crosshairs)
+	UTexture2D* CrossHairsBottom;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void SetActionMode(const EActionMode InActionMode);
 
 #pragma region Weapon
 
@@ -50,9 +67,7 @@ protected:
 	bool bAiming;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Combat")
 	EActionMode ActionMode;
-
-	UFUNCTION(BlueprintCallable, Category = "Combat")
-	void SetActionMode(const EActionMode InActionMode);
+		
 
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	void SetStrafeOrientation(EMIStrafeOrientation inStrafeOrientation, EMIMovementSystem inMovementSystem);
@@ -93,4 +108,16 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
+
+#pragma region HUDAndCrosshairs
+	/**
+	* HUD And Crosshairs
+	*/
+	class AMetroidHUD* HUD;
+	class AMetroidController* Controller;
+	void SetHUDCrosshairs(float DeltaTime);
+	float CrosshairVelocityFactor;
+	float CrosshairInAirFactor;
+
+#pragma endregion HUDAndCrosshairs
 };

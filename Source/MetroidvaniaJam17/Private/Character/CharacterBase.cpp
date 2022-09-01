@@ -10,7 +10,7 @@
 #include "Weapons/Weapon.h"
 
 ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
-	: AMICharacter_TwinStick(OA)
+	: AMICharacter(OA)
 {
 	// So that we can use tick
 	PrimaryActorTick.bCanEverTick = true;
@@ -19,10 +19,16 @@ ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
 	CameraBoom->SetupAttachment(GetRootComponent());
 	CameraBoom->TargetArmLength = 360.f;
 	CameraBoom->bUsePawnControlRotation = true;
+	CameraBoom->SetupAttachment(GetCapsuleComponent());
 
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
+
+	AdventureCameraBoom = CreateDefaultSubobject<UMISpringArmComponent>(TEXT("AdventureCameraBoom"));
+	AdventureCameraBoom->SetupAttachment(GetRootComponent());
+	AdventureCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("AdventureCamera"));
+	AdventureCamera->SetupAttachment(AdventureCameraBoom);
 
 	ViewComponent = CreateDefaultSubobject<UMIViewComponent>(TEXT("ViewComponent"));
 	
@@ -119,46 +125,60 @@ void ACharacterBase::SetOverlappingActor(AInteractable* Item)
 #pragma region Inputs
 void ACharacterBase::MoveForward(float Value)
 {
+	// if (Controller != nullptr && Value != 0.f)
+	// {
+	// 	//const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
+	// 	FRotator YawRotation;
+	// 	FVector Direction;
+	// 	if(bUseViewRot)
+	// 	{
+	// 		YawRotation = FRotator(0.f, ViewRot.Yaw, 0.f);
+	// 		Direction = UKismetMathLibrary::GetForwardVector(YawRotation);
+	// 	}
+	// 	else
+	// 	{
+	// 		YawRotation = FRotator(0.f, Controller->GetViewTarget()->GetActorRotation().Yaw, 0.f);
+	// 		Direction = UKismetMathLibrary::GetForwardVector(YawRotation);
+	// 	}
+	//
+	// 	//const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X));
+	// 	AddForwardMovementInput(Direction, Value);
+	// }
+
 	if (Controller != nullptr && Value != 0.f)
 	{
-		//const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
-		FRotator YawRotation;
-		FVector Direction;
-		if(bUseViewRot)
-		{
-			YawRotation = FRotator(0.f, ViewRot.Yaw, 0.f);
-			Direction = UKismetMathLibrary::GetForwardVector(YawRotation);
-		}
-		else
-		{
-			YawRotation = FRotator(0.f, Controller->GetViewTarget()->GetActorRotation().Yaw, 0.f);
-			Direction = UKismetMathLibrary::GetForwardVector(YawRotation);
-		}
-
-		//const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X));
+		const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
+		const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X));
 		AddForwardMovementInput(Direction, Value);
 	}
 }
 
 void ACharacterBase::MoveRight(float Value)
 {
+	// if (Controller != nullptr && Value != 0.f)
+	// {
+	// 	//const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
+	// 	FRotator YawRotation;
+	// 	FVector Direction;
+	// 	if(bUseViewRot)
+	// 	{
+	// 		YawRotation = FRotator(0.f, ViewRot.Yaw, 0.f);
+	// 		Direction = UKismetMathLibrary::GetRightVector(YawRotation);
+	// 	}
+	// 	else
+	// 	{
+	// 		YawRotation = FRotator(0.f, Controller->GetViewTarget()->GetActorRotation().Yaw, 0.f);
+	// 		Direction = UKismetMathLibrary::GetRightVector(YawRotation);
+	// 	}
+	// 	
+	// 	//const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y));
+	// 	AddRightMovementInput(Direction, Value);
+	// }
+
 	if (Controller != nullptr && Value != 0.f)
 	{
-		//const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
-		FRotator YawRotation;
-		FVector Direction;
-		if(bUseViewRot)
-		{
-			YawRotation = FRotator(0.f, ViewRot.Yaw, 0.f);
-			Direction = UKismetMathLibrary::GetRightVector(YawRotation);
-		}
-		else
-		{
-			YawRotation = FRotator(0.f, Controller->GetViewTarget()->GetActorRotation().Yaw, 0.f);
-			Direction = UKismetMathLibrary::GetRightVector(YawRotation);
-		}
-		
-		//const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y));
+		const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
+		const FVector Direction(FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y));
 		AddRightMovementInput(Direction, Value);
 	}
 }
@@ -171,7 +191,7 @@ void ACharacterBase::Turn(float Value)
 	}
 	else
 	{
-		ReceiveMouseTurnInput(Value);
+		//ReceiveMouseTurnInput(Value);
 		if(!UKismetMathLibrary::NearlyEqual_FloatFloat(Value, 0.f) && MouseCursorDecal)
 		{
 			MouseCursorDecal->SetHiddenInGame(false);
@@ -251,6 +271,6 @@ void ACharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("MoveForward", this, &ACharacterBase::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterBase::MoveRight);
 	PlayerInputComponent->BindAxis("Turn", this, &ACharacterBase::Turn);
-	//PlayerInputComponent->BindAxis("LookUp", this, &ACharacterBase::LookUp);
+	PlayerInputComponent->BindAxis("LookUp", this, &ACharacterBase::LookUp);
 }
 #pragma endregion Inputs

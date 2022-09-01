@@ -19,7 +19,7 @@
  * 
  */
 UCLASS()
-class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter_TwinStick, public IAbilitySystemInterface
+class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 	ACharacterBase(const FObjectInitializer& OA);
@@ -68,6 +68,7 @@ public:
 
 #pragma endregion PlayerDeath
 
+	UPROPERTY(EditDefaultsOnly, Category = "Camera")
 	bool bUseViewRot = true;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Camera")
@@ -78,6 +79,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	UCameraComponent* FollowCamera;
 
+	
 	
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera)
@@ -137,6 +139,12 @@ private:
 #pragma endregion Input
 
 public:
+	UPROPERTY(EditDefaultsOnly, Category = "Cameras|AdventureCamera", meta = (AllowPrivateAccess = "true"))
+	UCameraComponent* AdventureCamera;
+	UPROPERTY(EditDefaultsOnly, Category = "Cameras|AdventureCamera")
+	UMISpringArmComponent* AdventureCameraBoom;
+
+	
 	// Getter for the camera component
 	FORCEINLINE UCameraComponent* GetCamera() const { return FollowCamera; }
 	// Getter for the View Component

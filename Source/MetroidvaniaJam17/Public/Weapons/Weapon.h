@@ -125,5 +125,6 @@ public:
 public:
 	void SetWeaponState(EWeaponState InWeaponState);
 	FORCEINLINE USphereComponent* GetAreaSphere() const { return AreaSphere; }
+	UFUNCTION(BlueprintCallable)
 	FORCEINLINE USkeletalMeshComponent* GetWeaponMesh() const { return WeaponMesh; }
 };
