@@ -6,44 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e4d974-7c75-4336-9e84-fb6e0231798c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GA_ClawHookAbility.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/GA_ProjectileFire.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/HUD/MetroidHUD.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/HUD/MetroidHUD.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/ADS_ClawAbility.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/ADS_ClawAbility.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GA_ClawAbility.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GA_ClawAbility.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GrappleComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GrappleComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/ADS_TennisBall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/ADS_TennisBall.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/GA_TennisBall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/GA_TennisBall.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/BP_CharacterBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Enemies/BP_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/MetroidGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/MetroidGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Levels/L_Global_Mechanics.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Levels/L_Global_Mechanics.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Levels/L_MechanicsTestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Levels/L_MechanicsTestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/0/4I/L12SST82FHCTAD83SNSSFM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/DQ/4DQN1FVHEKLY0S5UGHB7U7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/DQ/4DQN1FVHEKLY0S5UGHB7U7.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/2/AW/JXG6PQZA7PWZOKPCOC75X7.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/4K/CNLS7NRVMGX7DR8PY6P9T5.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/AH/UX2WJKTJ5KDLEBAY9UZUXL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/AH/UX2WJKTJ5KDLEBAY9UZUXL.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/4/JT/WIVURC1XYFS2XWN2NZ0TJK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/9/00/J7ONV7Q2BKXJ576DM9U6T7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/9/00/J7ONV7Q2BKXJ576DM9U6T7.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/E/RL/B3A4MCNNNEPX1EUKI9QGY5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/E/RL/B3A4MCNNNEPX1EUKI9QGY5.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetroidvaniaJam17.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/MetroidvaniaJam17.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ElectronicNodes/Intermediate/Build/Win64/UnrealEditor/Development/ElectronicNodes/UnrealEditor-ElectronicNodes-0001.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ElectronicNodes/Intermediate/Build/Win64/UnrealEditor/Development/ElectronicNodes/UnrealEditor-ElectronicNodes-0001.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveIt/UnrealEditor-MoveIt-0001.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveIt/UnrealEditor-MoveIt-0001.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditor/UnrealEditor-MoveItEditor-0001.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditor/UnrealEditor-MoveItEditor-0001.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditorTools/UnrealEditor-MoveItEditorTools-0001.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Development/MoveItEditorTools/UnrealEditor-MoveItEditorTools-0001.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveIt/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditor/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditorTools/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Intermediate/Build/Win64/UnrealEditor/Inc/MoveItEditorTools/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/ActorComponents/CombatComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/ActorComponents/CombatComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Character/CharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Private/Character/CharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/ActorComponents/CombatComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/ActorComponents/CombatComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Weapons/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Weapons/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
