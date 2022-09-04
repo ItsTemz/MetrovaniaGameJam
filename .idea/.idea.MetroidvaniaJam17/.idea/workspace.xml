@@ -6,8 +6,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e4d974-7c75-4336-9e84-fb6e0231798c" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Assets/Beam/basecolor_Grunge.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Assets/Beam/beam_mtl.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Assets/Beam/normal_Grunge.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/SwingComponent.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/1/ZS/1X57IN1A8ELG6UOFI9XL76.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/4/Q2/IPSO0TXV27RBIYX1O0P7FA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/9/7U/ECBX9AGT5FE4YTZ1X8AFSO.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/B/E0/UWA0K551G1U7O6AXECDEPY.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MetroidvaniaJam17/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-MetroidvaniaJam17.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Assets/Props/Bar/SM_bar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Assets/Props/Bar/SM_bar.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/BP_ClawCable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/BP_ClawCable.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/BP_ClawHook.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/BP_ClawHook.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GrappleComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/ClawAbility/GrappleComponent.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/AM_Fire.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Abilities/TennisBallLaunch/AM_Fire.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Blueprints/Weapons/WDA_ExampleWeaponDataAsset.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Blueprints/Weapons/WDA_ExampleWeaponDataAsset.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/0/P9/CQA2EA2SSSFXIU952ZAC6F.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/0/P9/CQA2EA2SSSFXIU952ZAC6F.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/AH/UX2WJKTJ5KDLEBAY9UZUXL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/3/AH/UX2WJKTJ5KDLEBAY9UZUXL.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/4/Y2/TW6L9GU278R8YG1SO4WUS2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/4/Y2/TW6L9GU278R8YG1SO4WUS2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/7/F1/14EXP3YSAETIRYOSV95KPB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/7/F1/14EXP3YSAETIRYOSV95KPB.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/B/AE/2C4C52KZQE2CEGLJJJMMS8.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/_Game/Levels/L_MechanicsTestLevel/B/AE/2C4C52KZQE2CEGLJJJMMS8.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Content/AB_MoveIt.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Content/AB_MoveIt.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MoveIt/Content/Models/Weapons/Rifle/SKL_Rifle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MoveIt/Content/Models/Weapons/Rifle/SKL_Rifle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MetroidvaniaJam17/Public/Character/CharacterBase.h" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
