@@ -128,6 +128,10 @@ private:
 	 */
 	void LookUp(float Rate);
 
+	void TurnAtRate(float value);
+
+	void LookUpAtRate(float value);
+
 	// Crouching
 	void CrouchButtonPressed();
 
@@ -139,6 +143,12 @@ private:
 #pragma endregion Input
 
 public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera");
+	float BaseTurnRate = 45.f;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera");
+	float BaseLookUpAtRate = 45.f;
+	
 	UPROPERTY(EditDefaultsOnly, Category = "Cameras|AdventureCamera", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* AdventureCamera;
 	UPROPERTY(EditDefaultsOnly, Category = "Cameras|AdventureCamera")

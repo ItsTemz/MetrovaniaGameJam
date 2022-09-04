@@ -207,6 +207,16 @@ void ACharacterBase::LookUp(float Value)
 	}
 }
 
+void ACharacterBase::TurnAtRate(float value)
+{
+	AddControllerYawInput(value * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+}
+
+void ACharacterBase::LookUpAtRate(float value)
+{
+	AddControllerPitchInput(value * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+}
+
 void ACharacterBase::CrouchButtonPressed()
 {
 	if (bIsCrouched)
@@ -272,5 +282,7 @@ void ACharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterBase::MoveRight);
 	PlayerInputComponent->BindAxis("Turn", this, &ACharacterBase::Turn);
 	PlayerInputComponent->BindAxis("LookUp", this, &ACharacterBase::LookUp);
+	PlayerInputComponent->BindAxis("TurnRate", this, &ACharacterBase::TurnAtRate);
+	PlayerInputComponent->BindAxis("LookUpRate", this, &ACharacterBase::LookUpAtRate);
 }
 #pragma endregion Inputs
