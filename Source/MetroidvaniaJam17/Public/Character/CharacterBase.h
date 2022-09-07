@@ -22,6 +22,8 @@ UCLASS()
 class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
+public:
+	
 	ACharacterBase(const FObjectInitializer& OA);
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
@@ -79,14 +81,14 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	UCameraComponent* FollowCamera;
 
-	
-	
-
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera)
 	bool bUseMousePointer = true;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Movement")
 	UDecalComponent* MouseCursorDecal;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool bToggleSprint = true;
 private:
 	/**
 	* Handles camera blending and character state changes
@@ -149,9 +151,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera");
 	float BaseLookUpAtRate = 45.f;
 	
-	UPROPERTY(EditDefaultsOnly, Category = "Cameras|AdventureCamera", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = "Cameras|AdventureCamera", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* AdventureCamera;
-	UPROPERTY(EditDefaultsOnly, Category = "Cameras|AdventureCamera")
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = "Cameras|AdventureCamera")
 	UMISpringArmComponent* AdventureCameraBoom;
 
 	
@@ -163,8 +165,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FORCEINLINE void SetCurrentCameraVolume(ACameraVolume* CameraVolume) {CurrentCameraVolume = CameraVolume; }
 	
-	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const {return AbilitySystemComponent; }
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override {return AbilitySystemComponent; }
 	AWeapon* GetEquippedWeapon();
 	//FVector GetHitTarget() const;
 	void SetOverlappingActor(AInteractable* Item);
+
+	friend class ACharacterHUD;
 };

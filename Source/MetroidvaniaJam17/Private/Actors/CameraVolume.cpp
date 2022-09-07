@@ -51,7 +51,7 @@ void ACameraVolume::BoxOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Character = Cast<ACharacterBase>(OtherActor);
-	if(Character)
+	if(Character && Character->IsPlayerControlled())
 	{
 		Character->SetCurrentCameraVolume(this);
 		Character->bUseViewRot = false;

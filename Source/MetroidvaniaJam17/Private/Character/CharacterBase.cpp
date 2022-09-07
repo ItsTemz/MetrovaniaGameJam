@@ -232,11 +232,15 @@ void ACharacterBase::CrouchButtonPressed()
 void ACharacterBase::SprintButtonPressed()
 {
 	Sprint();
+	bToggleSprint = !bToggleSprint;
 }
 
 void ACharacterBase::SprintButtonReleased()
 {
-	StopSprinting();
+	if(!bToggleSprint)
+	{
+		StopSprinting();
+	}
 }
 
 void ACharacterBase::DrawCursor()

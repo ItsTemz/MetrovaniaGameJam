@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/HUD.h"
+#include "CharacterHUD.h"
 #include "MetroidHUD.generated.h"
 
 USTRUCT(BlueprintType)
@@ -24,7 +24,7 @@ public:
  * 
  */
 UCLASS()
-class METROIDVANIAJAM17_API AMetroidHUD : public AHUD
+class METROIDVANIAJAM17_API AMetroidHUD : public ACharacterHUD
 {
 	GENERATED_BODY()
 public:
