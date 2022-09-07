@@ -42,6 +42,8 @@ public:
 	UTexture2D* CrossHairsTop;
 	UPROPERTY(EditAnywhere, Category = Crosshairs)
 	UTexture2D* CrossHairsBottom;
+
+	float GetHealth() const;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

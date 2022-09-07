@@ -25,6 +25,18 @@ UCombatComponent::UCombatComponent()
 }
 
 
+float UCombatComponent::GetHealth() const
+{
+	if(Character)
+	{
+		if(UAttributeSetBase* AttributeSet = Character->AttributeSet)
+		{
+			return  AttributeSet->GetHealth();
+		}
+	}
+	return 0;
+}
+
 // Called when the game starts
 void UCombatComponent::BeginPlay()
 {
