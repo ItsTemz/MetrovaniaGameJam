@@ -27,12 +27,6 @@ void AMetroidvaniaJam17GameMode::StartPlay()
 	PrepareForNextWave();
 }
 
-void AMetroidvaniaJam17GameMode::Tick(float DeltaSeconds)
-{
-	Super::Tick(DeltaSeconds);
-	CheckWaveState();
-}
-
 
 void AMetroidvaniaJam17GameMode::StartWave()
 {
@@ -47,7 +41,7 @@ void AMetroidvaniaJam17GameMode::EndWave()
 {
 	GetWorldTimerManager().ClearTimer(TimerHandle_BotSpawner);
 
-	StopWaveSpawning();
+	//StopWaveSpawning();
 }
 
 void AMetroidvaniaJam17GameMode::PrepareForNextWave()
@@ -70,7 +64,10 @@ void AMetroidvaniaJam17GameMode::StopWaveSpawning()
 
 void AMetroidvaniaJam17GameMode::CheckWaveState()
 {
+	
 	const bool bIsPreparingForWave = GetWorldTimerManager().IsTimerActive(TimerHandle_NextWaveStart);
+	UE_LOG(LogTemp, Warning, TEXT("Check Wave State"));
+	
 	if(NumOfBotsToSpawn > 0 || bIsPreparingForWave) return;
 	
 	bool bIsAnyBotAlive = false;
@@ -83,13 +80,13 @@ void AMetroidvaniaJam17GameMode::CheckWaveState()
 		}
 
 		const UCombatComponent* CombatComponent = Cast<UCombatComponent>(TestPawn->GetComponentByClass(UCombatComponent::StaticClass()));
-		if(CombatComponent && CombatComponent->GetHealth() > 0)
+		if(CombatComponent && CombatComponent->GetHealth() > 0.0f)
 		{
 			bIsAnyBotAlive = true;
 			break;
 		}
 	}
-	if(bIsAnyBotAlive == false)
+	if(!bIsAnyBotAlive)
 	{
 		StopWaveSpawning();
 	}
@@ -104,4 +101,9 @@ void AMetroidvaniaJam17GameMode::SpawnBotTimerElapsed()
 	{
 		EndWave();
 	}
+}
+
+void AMetroidvaniaJam17GameMode::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
 }

@@ -54,5 +54,6 @@ protected:
 	void StopWaveSpawning();
 
 	// Check if any bots are still alive
+	UFUNCTION(BlueprintCallable)
 	void CheckWaveState();
 };
