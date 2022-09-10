@@ -5,6 +5,7 @@
 #include "EngineUtils.h"
 #include "MetroidvaniaJam17Character.h"
 #include "ActorComponents/CombatComponent.h"
+#include "GameMode/MetroidGameState.h"
 #include "UObject/ConstructorHelpers.h"
 
 AMetroidvaniaJam17GameMode::AMetroidvaniaJam17GameMode()
@@ -15,9 +16,12 @@ AMetroidvaniaJam17GameMode::AMetroidvaniaJam17GameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
-
+	GameStateClass = AMetroidGameState::StaticClass();
+	
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.TickInterval = 1.f;
+
+	
 }
 
 void AMetroidvaniaJam17GameMode::StartPlay()
@@ -35,11 +39,15 @@ void AMetroidvaniaJam17GameMode::StartWave()
 	NumOfBotsToSpawn = 2 * WaveCount;
 	
 	GetWorldTimerManager().SetTimer(TimerHandle_BotSpawner, this, &AMetroidvaniaJam17GameMode::SpawnBotTimerElapsed, 1.0f, true, 0.0f);
+
+	SetWaveState(EWaveState::WaveInProgress);
 }
 
 void AMetroidvaniaJam17GameMode::EndWave()
 {
 	GetWorldTimerManager().ClearTimer(TimerHandle_BotSpawner);
+
+	SetWaveState(EWaveState::WaitingToComplete);
 
 	//StopWaveSpawning();
 }
@@ -47,6 +55,8 @@ void AMetroidvaniaJam17GameMode::EndWave()
 void AMetroidvaniaJam17GameMode::PrepareForNextWave()
 {
 	GetWorldTimerManager().SetTimer(TimerHandle_NextWaveStart, this , &AMetroidvaniaJam17GameMode::StartWave, TimerBetweenWaves,false);
+	SetWaveState(EWaveState::WaitingToStart);
+
 }
 
 void AMetroidvaniaJam17GameMode::StopWaveSpawning()
@@ -66,7 +76,6 @@ void AMetroidvaniaJam17GameMode::CheckWaveState()
 {
 	
 	const bool bIsPreparingForWave = GetWorldTimerManager().IsTimerActive(TimerHandle_NextWaveStart);
-	UE_LOG(LogTemp, Warning, TEXT("Check Wave State"));
 	
 	if(NumOfBotsToSpawn > 0 || bIsPreparingForWave) return;
 	
@@ -88,7 +97,46 @@ void AMetroidvaniaJam17GameMode::CheckWaveState()
 	}
 	if(!bIsAnyBotAlive)
 	{
+		SetWaveState(EWaveState::WaveComplete);
+
 		StopWaveSpawning();
+	}
+}
+
+void AMetroidvaniaJam17GameMode::CheckAnyPlayerAlive()
+{
+	for(FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
+	{
+		APlayerController* PC = It->Get();
+		if(PC  && PC->GetPawn())
+		{
+			const APawn* MyPawn = PC->GetPawn();
+			const UCombatComponent* CombatComponent = Cast<UCombatComponent>(MyPawn->GetComponentByClass(UCombatComponent::StaticClass()));
+			if(ensure(CombatComponent) && CombatComponent->GetHealth() > 0.0f)
+			{
+				return;
+			}
+		}
+	}
+
+	GameOver();
+}
+
+void AMetroidvaniaJam17GameMode::GameOver()
+{
+	EndWave();
+
+	SetWaveState(EWaveState::GameOver);
+	//TODO: Finish up the game , present "Game over" to the player
+
+}
+
+void AMetroidvaniaJam17GameMode::SetWaveState(EWaveState NewWaveState)
+{
+	AMetroidGameState* GS = GetGameState<AMetroidGameState>();
+	if(ensureAlways(GS))
+	{
+		GS->SetWaveState(NewWaveState);
 	}
 }
 
@@ -106,4 +154,7 @@ void AMetroidvaniaJam17GameMode::SpawnBotTimerElapsed()
 void AMetroidvaniaJam17GameMode::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+	CheckWaveState();
+	CheckAnyPlayerAlive();
+	
 }

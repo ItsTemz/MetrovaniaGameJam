@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "GameMode/MetroidGameState.h"
 #include "MetroidvaniaJam17GameMode.generated.h"
 
 UCLASS(minimalapi)
@@ -56,4 +57,13 @@ protected:
 	// Check if any bots are still alive
 	UFUNCTION(BlueprintCallable)
 	void CheckWaveState();
+
+	// Check if any players are still alive
+	UFUNCTION(BlueprintCallable)
+	void CheckAnyPlayerAlive();
+
+	// Gameover when the player dies
+	void GameOver();
+
+	void SetWaveState(EWaveState NewWaveState);
 };
