@@ -9,6 +9,7 @@
 #include "Character/CharacterBase.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "HUD/MetroidHUD.h"
 #include "Kismet/GameplayStatics.h"
 #include "Weapons/Weapon.h"
 
@@ -23,6 +24,18 @@ UCombatComponent::UCombatComponent()
 	// ...
 }
 
+
+float UCombatComponent::GetHealth() const
+{
+	if(Character)
+	{
+		if(UAttributeSetBase* AttributeSet = Character->AttributeSet)
+		{
+			return  AttributeSet->GetHealth();
+		}
+	}
+	return 0;
+}
 
 // Called when the game starts
 void UCombatComponent::BeginPlay()
@@ -83,13 +96,13 @@ void UCombatComponent::SetActionMode(const EActionMode InActionMode)
 			Character->GetMICharacterMovement()->PivotAccelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBrakingDecelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBonusAccelerationOnEnd = 0.0f;
-
+			Character->AdventureCameraBoom->bEnableOrbit = false;
 			break;
 		case EActionMode::EAM_AdventureMode:
 			ActionMode = EActionMode::EAM_AdventureMode;
 			SetStrafeOrientation(EMIStrafeOrientation::SO_Neutral, EMIMovementSystem::MS_CycleOrientToMovement);
 			Character->GetViewComponent()->K2_SetNewCamera(
-				Character->GetCamera(),
+				Character->AdventureCamera,
 				CameraSettings,
 				3.0f,
 				EAlphaBlendOption::HermiteCubic,
@@ -99,6 +112,7 @@ void UCombatComponent::SetActionMode(const EActionMode InActionMode)
 			Character->GetMICharacterMovement()->PivotAccelerationMultiplier = 1.0f;
 			Character->GetMICharacterMovement()->PivotBrakingDecelerationMultiplier = 1.0f;
 			Character->GetMICharacterMovement()->PivotBonusAccelerationOnEnd = 400.0f;
+			Character->AdventureCameraBoom->bEnableOrbit = true;
 
 			break;
 		case EActionMode::EAM_MeleeMode:
@@ -115,7 +129,7 @@ void UCombatComponent::SetActionMode(const EActionMode InActionMode)
 			Character->GetMICharacterMovement()->PivotAccelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBrakingDecelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBonusAccelerationOnEnd = 0.0f;
-
+			Character->AdventureCameraBoom->bEnableOrbit = false;
 			break;
 		case EActionMode::EAM_OverShoulderMode:
 			ActionMode = EActionMode::EAM_OverShoulderMode;
@@ -131,7 +145,7 @@ void UCombatComponent::SetActionMode(const EActionMode InActionMode)
 			Character->GetMICharacterMovement()->PivotAccelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBrakingDecelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBonusAccelerationOnEnd = 0.0f;
-
+			Character->AdventureCameraBoom->bEnableOrbit = false;
 			break;
 		case EActionMode::EAM_TPSMode:
 			ActionMode = EActionMode::EAM_TPSMode;
@@ -147,7 +161,7 @@ void UCombatComponent::SetActionMode(const EActionMode InActionMode)
 			Character->GetMICharacterMovement()->PivotAccelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBrakingDecelerationMultiplier = 0.2f;
 			Character->GetMICharacterMovement()->PivotBonusAccelerationOnEnd = 0.0f;
-
+			Character->AdventureCameraBoom->bEnableOrbit = false;
 			break;
 		}
 	} //TODO PUT STOP AIMING HERE
@@ -222,6 +236,56 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType,
                                      FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+	SetHUDCrosshairs(DeltaTime);
 }
+
+void UCombatComponent::SetHUDCrosshairs(float DeltaTime)
+{
+	if (Character == nullptr || Character->Controller == nullptr) return;
+	Controller = Controller == nullptr ? Cast<AMetroidController>(Character->Controller) : Controller;
+	if (Controller)
+	{
+		HUD = HUD == nullptr ? Cast<AMetroidHUD>(Controller->GetHUD()) : HUD;
+		if (HUD)
+		{
+			FHUDPackage HUDPackage;
+			if (EquippedWeapon)
+			{
+				HUDPackage.CrossHairsCenter = CrossHairsCenter;
+				HUDPackage.CrossHairsTop	= CrossHairsTop;
+				HUDPackage.CrossHairsBottom = CrossHairsBottom;
+				HUDPackage.CrossHairsLeft = CrossHairsLeft;
+				HUDPackage.CrossHairsRight	= CrossHairsRight;
+			}
+			else
+			{
+				HUDPackage.CrossHairsCenter = nullptr;
+				HUDPackage.CrossHairsTop = nullptr;
+				HUDPackage.CrossHairsBottom = nullptr;
+				HUDPackage.CrossHairsLeft = nullptr;
+				HUDPackage.CrossHairsRight = nullptr;
+			}
+			// Calculate Cross-hair Spread
+			// [0, 600] -> [0 , 1]
+			const FVector2D WalkSpeedRange(0.f, Character->GetMICharacterMovement()->MaxWalkSpeed);
+			const FVector2D VelocityMultiplierRange(0.f, 1.f);
+			FVector Velocity = Character->GetVelocity();
+			Velocity.Z = 0.f;
+
+			CrosshairVelocityFactor = FMath::GetMappedRangeValueClamped(WalkSpeedRange, VelocityMultiplierRange,
+																		Velocity.Size());
+			if(Character->GetMICharacterMovement()->IsFalling())
+			{
+				CrosshairInAirFactor = FMath::FInterpTo(CrosshairInAirFactor, 2.25f, DeltaTime, 2.25f);
+			}
+			else
+			{
+				CrosshairInAirFactor = FMath::FInterpTo(CrosshairInAirFactor, 0.f, DeltaTime, 30.f);
+			}
+			
+			HUDPackage.CrosshairSpread = CrosshairVelocityFactor + CrosshairInAirFactor;
+			HUD->SetHudPackage(HUDPackage);
+		}
+	}
+}
+

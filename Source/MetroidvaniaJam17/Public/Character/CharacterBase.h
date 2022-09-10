@@ -19,9 +19,11 @@
  * 
  */
 UCLASS()
-class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter_TwinStick, public IAbilitySystemInterface
+class METROIDVANIAJAM17_API ACharacterBase : public AMICharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
+public:
+	
 	ACharacterBase(const FObjectInitializer& OA);
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
@@ -68,6 +70,7 @@ public:
 
 #pragma endregion PlayerDeath
 
+	UPROPERTY(EditDefaultsOnly, Category = "Camera")
 	bool bUseViewRot = true;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Camera")
@@ -78,13 +81,14 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	UCameraComponent* FollowCamera;
 
-	
-
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera)
 	bool bUseMousePointer = true;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Movement")
 	UDecalComponent* MouseCursorDecal;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool bToggleSprint = true;
 private:
 	/**
 	* Handles camera blending and character state changes
@@ -126,6 +130,10 @@ private:
 	 */
 	void LookUp(float Rate);
 
+	void TurnAtRate(float value);
+
+	void LookUpAtRate(float value);
+
 	// Crouching
 	void CrouchButtonPressed();
 
@@ -137,6 +145,18 @@ private:
 #pragma endregion Input
 
 public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera");
+	float BaseTurnRate = 45.f;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera");
+	float BaseLookUpAtRate = 45.f;
+	
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = "Cameras|AdventureCamera", meta = (AllowPrivateAccess = "true"))
+	UCameraComponent* AdventureCamera;
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = "Cameras|AdventureCamera")
+	UMISpringArmComponent* AdventureCameraBoom;
+
+	
 	// Getter for the camera component
 	FORCEINLINE UCameraComponent* GetCamera() const { return FollowCamera; }
 	// Getter for the View Component
@@ -145,8 +165,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FORCEINLINE void SetCurrentCameraVolume(ACameraVolume* CameraVolume) {CurrentCameraVolume = CameraVolume; }
 	
-	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const {return AbilitySystemComponent; }
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override {return AbilitySystemComponent; }
 	AWeapon* GetEquippedWeapon();
 	//FVector GetHitTarget() const;
 	void SetOverlappingActor(AInteractable* Item);
+
+	friend class ACharacterHUD;
 };
