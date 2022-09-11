@@ -44,6 +44,12 @@ void UCombatComponent::BeginPlay()
 	//SetActionMode(ActionMode);
 }
 
+void UCombatComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
+{
+	Super::OnComponentDestroyed(bDestroyingHierarchy);
+	if(EquippedWeapon) EquippedWeapon->Destroy();
+}
+
 #pragma region Weapon
 void UCombatComponent::EquipWeapon(AWeapon* Weapon)
 {
