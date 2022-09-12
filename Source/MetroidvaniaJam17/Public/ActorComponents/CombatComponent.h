@@ -18,6 +18,7 @@ class METROIDVANIAJAM17_API UCombatComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:
+	
 	// Sets default values for this component's properties
 	UCombatComponent();
 	friend class ACharacterBase;
@@ -27,6 +28,9 @@ public:
 
 	UPROPERTY(BlueprintReadOnly)
 	AWeapon* EquippedWeapon;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Teams")
+	uint8 TeamNum = 255;
 
 	/**
 		 *	Textures For the Weapon Cross-hairs
@@ -112,6 +116,9 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Teams")
+	static bool IsFriendly(AActor* ActorA, AActor* ActorB);
 
 #pragma region HUDAndCrosshairs
 	/**

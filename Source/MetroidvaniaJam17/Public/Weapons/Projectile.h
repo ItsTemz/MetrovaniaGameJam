@@ -19,6 +19,10 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class UProjectileMovementComponent* ProjectileMovementComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grappling")
+	bool bIsGrapple = false;
+	
 protected:
 	virtual void BeginPlay() override;
 

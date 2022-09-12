@@ -7,6 +7,7 @@
 #include "Components/SphereComponent.h"
 #include "Components/WidgetComponent.h"
 #include "Engine/SkeletalMeshSocket.h"
+#include "Kismet/GameplayStatics.h"
 #include "Net/UnrealNetwork.h"
 #include "Weapons/Projectile.h"
 
@@ -105,6 +106,10 @@ void AWeapon::Fire(const FVector& HitTarget, bool bShouldHome)
 	if(FireAnimation)
 	{
 		WeaponMesh->PlayAnimation(FireAnimation, false);
+	}
+	if(FireSound)
+	{
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), FireSound, GetActorLocation());
 	}
 	
 	APawn* InstigatorPawn = Cast<APawn>(GetOwner());
