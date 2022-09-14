@@ -22,6 +22,9 @@ public:
 	class USphereComponent* AreaSphere;
 	
 	void ShowPickUpWidget(bool bShowWidget) const;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Interaction")
+	void Interact();
 	
 	UFUNCTION()
 	virtual void OnSphereOverlap(UPrimitiveComponent* OverlappedComponent,

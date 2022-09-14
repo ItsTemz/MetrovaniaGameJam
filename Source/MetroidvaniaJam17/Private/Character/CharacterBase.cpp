@@ -102,9 +102,9 @@ void ACharacterBase::EquipWeapon()
 {
 	if(OverlappingItem)
 	{
+		OverlappingItem->Interact();
 		if(AWeapon* Weapon = Cast<AWeapon>(OverlappingItem)) CombatComponent->ChangeWeapon(Weapon);
 	}
-	
 }
 
 void ACharacterBase::SetOverlappingActor(AInteractable* Item)
