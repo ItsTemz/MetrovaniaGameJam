@@ -44,6 +44,12 @@ void UCombatComponent::BeginPlay()
 	//SetActionMode(ActionMode);
 }
 
+void UCombatComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
+{
+	Super::OnComponentDestroyed(bDestroyingHierarchy);
+	if(EquippedWeapon) EquippedWeapon->Destroy();
+}
+
 #pragma region Weapon
 void UCombatComponent::EquipWeapon(AWeapon* Weapon)
 {
@@ -237,6 +243,21 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	SetHUDCrosshairs(DeltaTime);
+}
+
+bool UCombatComponent::IsFriendly(AActor* ActorA, AActor* ActorB)
+{
+	if(ActorA == nullptr || ActorB == nullptr) return true;
+	UCombatComponent* CombatCompA = Cast<UCombatComponent>(ActorA->GetComponentByClass(UCombatComponent::StaticClass()));
+	UCombatComponent* CombatCompB = Cast<UCombatComponent>(ActorB->GetComponentByClass(UCombatComponent::StaticClass()));
+
+	if(CombatCompA == nullptr || CombatCompB == nullptr)
+	{
+		// Assume friendly
+		return true;
+	}
+
+	return CombatCompA->TeamNum == CombatCompB->TeamNum;
 }
 
 void UCombatComponent::SetHUDCrosshairs(float DeltaTime)

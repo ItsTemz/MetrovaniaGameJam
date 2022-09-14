@@ -8,6 +8,8 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
+#include "Weapons/GrappleComponent.h"
+#include "Weapons/SwingAble.h"
 #include "Weapons/Weapon.h"
 
 
@@ -27,6 +29,7 @@ AProjectile::AProjectile()
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(
 		TEXT("ProjectileMovementComponent"));
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;
+	
 }
 
 void AProjectile::BeginPlay()
@@ -50,14 +53,15 @@ void AProjectile::BeginPlay()
 		CollisionBox->OnComponentHit.AddDynamic(this, &AProjectile::OnHit);
 	}
 
-	const ACharacterBase* OwningCharacter = Cast<ACharacterBase>(GetOwner());
-	if (OwningCharacter)
+	if (const ACharacterBase* OwningCharacter = Cast<ACharacterBase>(GetOwner()))
 	{
-		AActor* CurrentTarget = OwningCharacter->CombatComponent->CurrentTarget;
-		if (CurrentTarget)
+		if (const AActor* CurrentTarget = OwningCharacter->CombatComponent->CurrentTarget)
 		{
-			ProjectileMovementComponent->bIsHomingProjectile = true;
-			ProjectileMovementComponent->HomingTargetComponent = CurrentTarget->GetRootComponent();
+			if(CurrentTarget->ActorHasTag(FName("SwingAble")) == false)
+			{
+				ProjectileMovementComponent->bIsHomingProjectile = true;
+				ProjectileMovementComponent->HomingTargetComponent = CurrentTarget->GetRootComponent();
+			}
 		}
 		else
 		{
