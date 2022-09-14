@@ -97,6 +97,7 @@ AWeapon* ACharacterBase::GetEquippedWeapon()
 	if(CombatComponent == nullptr) return nullptr;
 	return CombatComponent->EquippedWeapon;
 }
+
 void ACharacterBase::EquipWeapon()
 {
 	if(OverlappingItem)
