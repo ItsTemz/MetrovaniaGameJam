@@ -15,8 +15,8 @@ AInteractable::AInteractable()
 	PrimaryActorTick.bCanEverTick = true;
 	ActorRootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	SetRootComponent(ActorRootComponent);
-	PickUpWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("Widget"));
-	PickUpWidget->SetupAttachment(GetRootComponent());
+	InteractionWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("Widget"));
+	InteractionWidget->SetupAttachment(GetRootComponent());
 	AreaSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AreaSphere"));
 	AreaSphere->SetupAttachment(GetRootComponent());
 	AreaSphere->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
@@ -45,9 +45,9 @@ void AInteractable::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent,
 
 void AInteractable::ShowPickUpWidget(bool bShowWidget) const
 {
-	if (PickUpWidget)
+	if (InteractionWidget)
 	{
-		PickUpWidget->SetVisibility(bShowWidget);
+		InteractionWidget->SetVisibility(bShowWidget);
 	}
 }
 
@@ -60,9 +60,9 @@ void AInteractable::BeginPlay()
 	AreaSphere->OnComponentBeginOverlap.AddDynamic(this, &AInteractable::OnSphereOverlap);
 	AreaSphere->OnComponentEndOverlap.AddDynamic(this, &AInteractable::OnSphereEndOverlap);
 
-	if (PickUpWidget)
+	if (InteractionWidget)
 	{
-		PickUpWidget->SetVisibility(false);
+		InteractionWidget->SetVisibility(false);
 	}
 }
 
