@@ -20,8 +20,6 @@ void UAttributeSetBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Ou
 void UAttributeSetBase::PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data)
 {
 	Super::PostGameplayEffectExecute(Data);
-
-	
 	const FGameplayEffectContextHandle Context = Data.EffectSpec.GetContext();
 	const UAbilitySystemComponent* Source = Context.GetOriginalInstigatorAbilitySystemComponent();
 	const FGameplayTagContainer& SourceTags = *Data.EffectSpec.CapturedSourceTags.GetAggregatedTags();
@@ -34,24 +32,27 @@ void UAttributeSetBase::PostGameplayEffectExecute(const FGameplayEffectModCallba
 		ACharacterBase* Owner = Cast<ACharacterBase>(GetOwningActor());
 		// Adds a Tag if the character is at full health
 		const FGameplayTag FullHealthTag = FGameplayTag::RequestGameplayTag(FName("State.FullHealth"));
-		if (GetHealth() == GetMaxHealth())
+		
+		if(Owner)
 		{
-			Owner->GetAbilitySystemComponent()->AddLooseGameplayTag(FullHealthTag);
-		}
-		else
-		{
-			Owner->GetAbilitySystemComponent()->RemoveLooseGameplayTag(FullHealthTag);
-		}
-
-		const FGameplayTag PlayerDeadTag = FGameplayTag::RequestGameplayTag(FName("State.Dead"));
-		if(Health.GetCurrentValue() <= 0.f)
-		{
-			Owner->GetAbilitySystemComponent()->AddLooseGameplayTag(PlayerDeadTag);
-			Owner->HandleDeath();
-		}
-		else
-		{
-			Owner->GetAbilitySystemComponent()->RemoveLooseGameplayTag(PlayerDeadTag);
+			if (GetHealth() == GetMaxHealth())
+			{
+				Owner->GetAbilitySystemComponent()->AddLooseGameplayTag(FullHealthTag);
+			}
+			else
+			{
+				Owner->GetAbilitySystemComponent()->RemoveLooseGameplayTag(FullHealthTag);
+			}
+			const FGameplayTag PlayerDeadTag = FGameplayTag::RequestGameplayTag(FName("State.Dead"));
+			if(Health.GetCurrentValue() <= 0.f)
+			{
+				Owner->GetAbilitySystemComponent()->AddLooseGameplayTag(PlayerDeadTag);
+				Owner->HandleDeath();
+			}
+			else
+			{
+				Owner->GetAbilitySystemComponent()->RemoveLooseGameplayTag(PlayerDeadTag);
+			}
 		}
 	}
 }
@@ -60,7 +61,6 @@ void UAttributeSetBase::OnRep_Health(const FGameplayAttributeData& Oldhealth)
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UAttributeSetBase, Health, Oldhealth);
 }
-
 void UAttributeSetBase::OnRep_MaxHealth(const FGameplayAttributeData& OldMaxHealth)
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UAttributeSetBase, MaxHealth, OldMaxHealth);
