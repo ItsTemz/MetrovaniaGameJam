@@ -17,11 +17,15 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Root")
 	USceneComponent* ActorRootComponent;
 	UPROPERTY(EditAnywhere, Category = "Widgets")
-	class UWidgetComponent* PickUpWidget;
+	class UWidgetComponent* InteractionWidget;
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon Properties")
 	class USphereComponent* AreaSphere;
 	
 	void ShowPickUpWidget(bool bShowWidget) const;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Interaction")
+	void Interact();
+
 	
 	UFUNCTION()
 	virtual void OnSphereOverlap(UPrimitiveComponent* OverlappedComponent,

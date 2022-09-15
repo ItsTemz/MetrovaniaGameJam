@@ -19,9 +19,6 @@ public:
 	// Sets default values for this character's properties
 	ABossAI(const FObjectInitializer& OA);
 
-	UPROPERTY(VisibleDefaultsOnly)
-	USceneComponent* RootComp;
-
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UMISpringArmComponent* CameraBoom;
 
