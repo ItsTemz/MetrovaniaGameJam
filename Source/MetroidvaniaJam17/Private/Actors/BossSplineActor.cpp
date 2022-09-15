@@ -46,6 +46,7 @@ void ABossSplineActor::MoveActor(const float DeltaTime, AActor* ActorToMove, AAc
 		LookAtRotation = FinalRot;
 
 		FinalRot.Roll = 0.f;
+		FinalRot.Pitch = 0.f;
 		ActorToMove->SetActorLocationAndRotation(FinalLoc, FinalRot);
 	}
 }
