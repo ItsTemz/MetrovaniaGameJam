@@ -4,6 +4,7 @@
 #include "ActorComponents/AttributeSetBase.h"
 
 #include "GameplayEffectExtension.h"
+#include "AI/BossAI.h"
 #include "Character/CharacterBase.h"
 
 UAttributeSetBase::UAttributeSetBase()
@@ -29,29 +30,19 @@ void UAttributeSetBase::PostGameplayEffectExecute(const FGameplayEffectModCallba
 		SetHealth(FMath::Clamp(GetHealth(), 0.f, GetMaxHealth()));
 		OnHealthChanged.Broadcast(Health.GetCurrentValue(), MaxHealth.GetCurrentValue());
 		
-		ACharacterBase* Owner = Cast<ACharacterBase>(GetOwningActor());
-		// Adds a Tag if the character is at full health
-		const FGameplayTag FullHealthTag = FGameplayTag::RequestGameplayTag(FName("State.FullHealth"));
-		
-		if(Owner)
+		if(ACharacterBase* Character = Cast<ACharacterBase>(GetOwningActor()))
 		{
-			if (GetHealth() == GetMaxHealth())
-			{
-				Owner->GetAbilitySystemComponent()->AddLooseGameplayTag(FullHealthTag);
-			}
-			else
-			{
-				Owner->GetAbilitySystemComponent()->RemoveLooseGameplayTag(FullHealthTag);
-			}
-			const FGameplayTag PlayerDeadTag = FGameplayTag::RequestGameplayTag(FName("State.Dead"));
 			if(Health.GetCurrentValue() <= 0.f)
 			{
-				Owner->GetAbilitySystemComponent()->AddLooseGameplayTag(PlayerDeadTag);
-				Owner->HandleDeath();
+				Character->HandleDeath();
 			}
-			else
+		}
+		
+		if(ABossAI* BossAI = Cast<ABossAI>(GetOwningActor()))
+		{
+			if(Health.GetCurrentValue() <= 0.f)
 			{
-				Owner->GetAbilitySystemComponent()->RemoveLooseGameplayTag(PlayerDeadTag);
+				BossAI->HandleDeath();
 			}
 		}
 	}

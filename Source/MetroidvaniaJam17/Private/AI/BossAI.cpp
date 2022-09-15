@@ -7,6 +7,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
@@ -41,14 +42,14 @@ void ABossAI::GiveAbility(TSubclassOf<UGameplayAbility> AbilityToGive)
 	}
 }
 
-bool ABossAI::isDead()
-{
-	return bIsDead;
-}
 
-void ABossAI::HandleDeath()
+
+void ABossAI::OnHealthChanged(float Health, float MaxValue)
 {
-	bIsDead = true;
+	if(Health <= 0.0f)
+	{
+		HandleDeath();
+	}
 }
 
 void ABossAI::MoveForward(float Value)
@@ -90,7 +91,7 @@ void ABossAI::PreInitializeComponents()
 void ABossAI::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	HealthChangedDelegate.AddDynamic(this, &ABossAI::OnHealthChanged);
 }
 
 // Called every frame

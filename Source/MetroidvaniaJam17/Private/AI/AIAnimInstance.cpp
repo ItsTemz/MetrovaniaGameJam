@@ -32,6 +32,8 @@ void UAIAnimInstance::UpdateAnimationProperties(float DeltaTime)
 		{
 			bIsAccelerating = false;
 		}
+
+		bIsDead = BossAI->GetIsDead();
 	}
 }
 

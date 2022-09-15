@@ -35,21 +35,29 @@ public:
 #pragma endregion GameplayAbilitySystem
 
 #pragma region PlayerDeath
+
+	FOnHealthChangedDelegate HealthChangedDelegate;
 	// The players current death state
 	bool bIsDead = false;
-
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	void SetIsDeath(bool isDead) { bIsDead = isDead; }
 	/**
 	 * Checks whether or not the character is dead
 	 * @returns bIsDead
 	 */
-	UFUNCTION(BlueprintGetter, Category = "Character")
-	bool isDead();
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Character")
+	bool GetIsDead() const {return bIsDead; }
 	
 	/**
 	 * Handles what should happen when the player health reaches 0
 	 */
-	UFUNCTION(BlueprintCallable, Category = "Character")
+	UFUNCTION(BlueprintImplementableEvent, Category = "Character")
 	void HandleDeath();
+
+	void OnHealthChanged(float Health, float MaxValue);
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Character")
+	UAnimMontage* DeathAnimation;
 
 #pragma endregion PlayerDeath
 
