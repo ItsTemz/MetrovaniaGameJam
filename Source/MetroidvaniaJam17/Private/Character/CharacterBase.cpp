@@ -42,6 +42,9 @@ ACharacterBase::ACharacterBase(const FObjectInitializer& OA)
 	MouseCursorDecal->SetupAttachment(GetRootComponent());
 	MouseCursorDecal->DecalSize = FVector(16.f, 32.f, 32.f);
 	MouseCursorDecal->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
+
+	CosmeticMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CosmeticMesh"));
+	CosmeticMesh->SetupAttachment(GetMesh());
 }
 
 void ACharacterBase::BeginPlay()

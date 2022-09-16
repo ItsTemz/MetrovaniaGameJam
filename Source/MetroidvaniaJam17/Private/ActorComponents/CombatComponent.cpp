@@ -21,7 +21,7 @@ UCombatComponent::UCombatComponent()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	// ...
+	
 }
 
 
@@ -66,12 +66,11 @@ void UCombatComponent::ChangeWeapon(AWeapon* Weapon)
 	{
 		EquippedWeapon = Weapon;
 		EquippedWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
-		//EquippedWeapon->InitDataAsset();
-
-		if (const USkeletalMeshSocket* AttachSocket = Character->GetMesh()->GetSocketByName(
+		
+		if (const USkeletalMeshSocket* AttachSocket = Character->CosmeticMesh->GetSocketByName(
 			EquippedWeapon->GetSocketName()))
 		{
-			AttachSocket->AttachActor(EquippedWeapon, Character->GetMesh());
+			AttachSocket->AttachActor(EquippedWeapon, Character->CosmeticMesh);
 		}
 		EquippedWeapon->SetOwner(Character);
 	}

@@ -37,6 +37,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "CombatComponent")
 	UCombatComponent* CombatComponent;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "CosmeticMesh")
+	USkeletalMeshComponent* CosmeticMesh;
+
 #pragma region GameplayAbilitySystem
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
 	UAbilitySystemComponent* AbilitySystemComponent;
