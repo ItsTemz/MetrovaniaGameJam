@@ -49,7 +49,10 @@ void AWeapon::InitDataAsset()
 		
 		if(ACharacterBase* Character = Cast<ACharacterBase>(GetOwner()))
 		{
-			// Give Abilities
+			for (TSubclassOf<UGameplayAbility> const Ability : WeaponDataAsset->Skills)
+			{
+				Character->GiveAbility(Ability);
+			}
 		}
 
 		bIsRangedWeapon = WeaponDataAsset->bIsRangedWeapon;

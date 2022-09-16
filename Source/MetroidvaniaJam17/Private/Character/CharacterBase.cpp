@@ -72,25 +72,11 @@ void ACharacterBase::GiveAbility(TSubclassOf<UGameplayAbility> AbilityToGive)
 		if (HasAuthority() && AbilityToGive)
 		{
 			AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(AbilityToGive, 1, 0));
-			AddAbilityToUI();
 		}
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
 	}
 }
 
-void ACharacterBase::AddAbilityToUI()
-{
-}
-
-bool ACharacterBase::isDead()
-{
-	return bIsDead;
-}
-
-void ACharacterBase::HandleDeath()
-{
-	bIsDead = true;
-}
 
 AWeapon* ACharacterBase::GetEquippedWeapon()
 {

@@ -6,7 +6,6 @@
 #include "AbilityDataSet.h"
 #include "GameplayData.h"
 #include "Sound/SoundCue.h"
-#include "UObject/Object.h"
 #include "WeaponDataAsset.generated.h"
 
 /**
@@ -35,7 +34,7 @@ public:
 	 * The skills that this weapon will give the player
 	 */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Skills")
-	TArray<UAbilityDataSet* > Skills;
+	TArray<TSubclassOf<UGameplayAbility>> Skills;
 
 	/*
 	 * Set The values if the weapon is ranged
@@ -78,9 +77,5 @@ public:
 		meta = (EditCondition="bIsRangedWeapon && WeaponDamageType == EWeaponProjectileType::EWPT_HitScanWeapon",
 			EditConditionHides))
 	UParticleSystem* TracerEffect;
-
-private:
-// #if WITH_EDITOR
-// 	virtual bool CanEditChange(const FProperty* InProperty) const override;
-// #endif
+	
 };

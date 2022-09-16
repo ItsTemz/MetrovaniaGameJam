@@ -40,7 +40,7 @@ public:
 	// The players current death state
 	bool bIsDead = false;
 	UFUNCTION(BlueprintCallable, Category = "Character")
-	void SetIsDeath(bool isDead) { bIsDead = isDead; }
+	void SetIsDead(bool isDead) { bIsDead = isDead; }
 	/**
 	 * Checks whether or not the character is dead
 	 * @returns bIsDead
