@@ -67,10 +67,10 @@ void UCombatComponent::ChangeWeapon(AWeapon* Weapon)
 		EquippedWeapon = Weapon;
 		EquippedWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
 		
-		if (const USkeletalMeshSocket* AttachSocket = Character->CosmeticMesh->GetSocketByName(
+		if (const USkeletalMeshSocket* AttachSocket = Character->GetMesh()->GetSocketByName(
 			EquippedWeapon->GetSocketName()))
 		{
-			AttachSocket->AttachActor(EquippedWeapon, Character->CosmeticMesh);
+			AttachSocket->AttachActor(EquippedWeapon, Character->GetMesh());
 		}
 		EquippedWeapon->SetOwner(Character);
 	}
