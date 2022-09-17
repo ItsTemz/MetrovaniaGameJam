@@ -81,5 +81,5 @@ protected:
 	void SetWaveState(EWaveState NewWaveState);
 public:
 	UPROPERTY(BlueprintReadWrite, Category ="CollectedWeapons")
-	TArray<AWeapon*> CollectedWeapons;
+	TArray<TSubclassOf<AWeapon>> CollectedWeapons;
 };

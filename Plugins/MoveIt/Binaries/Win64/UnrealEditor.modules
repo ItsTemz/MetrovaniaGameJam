@@ -2,8 +2,8 @@
 	"BuildId": "19505902",
 	"Modules": 
 	{
-		"MoveIt": "UnrealEditor-MoveIt.dll",
-		"MoveItEditor": "UnrealEditor-MoveItEditor.dll",
-		"MoveItEditorTools": "UnrealEditor-MoveItEditorTools.dll"
+		"MoveIt": "UnrealEditor-MoveIt-0001.dll",
+		"MoveItEditor": "UnrealEditor-MoveItEditor-0001.dll",
+		"MoveItEditorTools": "UnrealEditor-MoveItEditorTools-0001.dll"
 	}
 }

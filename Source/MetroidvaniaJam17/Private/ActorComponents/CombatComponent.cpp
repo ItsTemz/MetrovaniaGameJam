@@ -77,12 +77,11 @@ void UCombatComponent::ChangeWeapon(AWeapon* Weapon)
 		EquippedWeapon->SetOwner(Character);
 
 		AMetroidvaniaJam17GameMode* GM = Cast<AMetroidvaniaJam17GameMode>(GetWorld()->GetAuthGameMode());
-		if(GM)
+		if(GM && Character->IsPlayerControlled())
 		{
-			GM->CollectedWeapons.Push(Weapon);
+			GM->CollectedWeapons.AddUnique(Weapon->GetClass());
 		}
 	}
-	
 }
 
 #pragma endregion Weapon

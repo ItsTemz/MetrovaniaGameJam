@@ -2,6 +2,6 @@
 	"BuildId": "19505902",
 	"Modules": 
 	{
-		"GitSourceControl": "UnrealEditor-GitSourceControl.dll"
+		"GitSourceControl": "UnrealEditor-GitSourceControl-0001.dll"
 	}
 }
