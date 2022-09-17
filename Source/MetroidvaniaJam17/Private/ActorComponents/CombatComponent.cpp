@@ -11,6 +11,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "HUD/MetroidHUD.h"
 #include "Kismet/GameplayStatics.h"
+#include "MetroidvaniaJam17/MetroidvaniaJam17GameMode.h"
 #include "Weapons/Weapon.h"
 
 
@@ -53,6 +54,7 @@ void UCombatComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
 #pragma region Weapon
 void UCombatComponent::EquipWeapon(AWeapon* Weapon)
 {
+	
 	ChangeWeapon(Weapon);
 }
 
@@ -73,7 +75,14 @@ void UCombatComponent::ChangeWeapon(AWeapon* Weapon)
 			AttachSocket->AttachActor(EquippedWeapon, Character->GetMesh());
 		}
 		EquippedWeapon->SetOwner(Character);
+
+		AMetroidvaniaJam17GameMode* GM = Cast<AMetroidvaniaJam17GameMode>(GetWorld()->GetAuthGameMode());
+		if(GM)
+		{
+			GM->CollectedWeapons.Push(Weapon);
+		}
 	}
+	
 }
 
 #pragma endregion Weapon

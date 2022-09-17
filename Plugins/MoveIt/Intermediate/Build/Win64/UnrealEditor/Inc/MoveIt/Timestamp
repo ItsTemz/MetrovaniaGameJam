@@ -1,12 +1,13 @@
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\UnrealBase\AnimNode_MIBlendSpacePlayer.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNodes_Shared.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AdditiveAngularBase.h
-I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AimOffsetCompensation.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AdditiveBlendSpace.h
-I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AngularLean.h
+I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AimOffsetCompensation.h
+I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AirLean.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AngularBase.h
-I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_Duck.h
+I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AngularLean.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_CopyIKBones.h
+I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_Duck.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_FootIK.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_Gait.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_JumpFootIK.h
@@ -31,8 +32,7 @@ I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\Mov
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MIPhysicalMaterial.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MIPlayerCameraManager.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MIPlayerController.h
-I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MISkeletalMeshComponent.h
+I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MISpringArmComponent.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MITypes.h
 I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MIViewComponent.h
-I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MISpringArmComponent.h
-I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\AnimNodes\AnimNode_AirLean.h
+I:\Unreal Projects\MetroidvaniaJam17\MetrovaniaGameJam\Plugins\MoveIt\Source\MoveIt\Public\MISkeletalMeshComponent.h

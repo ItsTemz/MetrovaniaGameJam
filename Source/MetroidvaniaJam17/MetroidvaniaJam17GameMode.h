@@ -5,7 +5,18 @@
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 #include "GameMode/MetroidGameState.h"
+#include "Weapons/Weapon.h"
 #include "MetroidvaniaJam17GameMode.generated.h"
+
+UENUM(BlueprintType)
+enum class EGameState : uint8
+{
+	MainMenu,
+	Playing,
+	Paused,
+	BossFight,
+	GameComplete
+};
 
 UCLASS(minimalapi)
 class AMetroidvaniaJam17GameMode : public AGameModeBase
@@ -34,6 +45,8 @@ public:
 	virtual void StartPlay() override;
 
 	virtual  void Tick(float DeltaSeconds) override;
+
+	EGameState StateOfTheGame;
 
 protected:
 	// Look for BP to spawn a single bot
@@ -66,4 +79,7 @@ protected:
 	void GameOver();
 
 	void SetWaveState(EWaveState NewWaveState);
+public:
+	UPROPERTY(BlueprintReadWrite, Category ="CollectedWeapons")
+	TArray<AWeapon*> CollectedWeapons;
 };
